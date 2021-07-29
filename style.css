@@ -54,6 +54,7 @@ table {
 
 .sidebar {
   min-width: 200px;
+  border-right: 1px solid white;
 }
 
 .sidebar__logo {
@@ -80,23 +81,70 @@ table {
   align-items: center;
 }
 
+.header__authentication .nav {
+  display: flex;
+}
+
+.header__authentication img {
+  padding-right: 8px;
+}
+
 .nav {
   padding: 0 20px;
   font-size: 13px;
+  align-items: center;
 }
 
 .header__nav .nav {
   font-weight: bold;
 }
 
+.nav-button {
+  padding: 5px 20px;
+  border-color: #0052b4;
+  border-radius: 5px;
+  background-color: #E5E5E5;
+}
+
+/* section one */
+.main__section-one {
+  margin: 70px;
+}
+
+.main__section-one__title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-one {
+  padding: 12px;
+}
+
+.main__section-one__main {
+  max-width: 541px;
+  font-size: 20px;
+  line-height: 35px;
+  color: #6a6a6a;
+}
+
+.main__section-one__button button {
+  width: 145px;
+  height: 45px;
+  background-color: #0052b4;
+  color: white;
+  border: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  margin: 0px;
+  margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: #E5E5E5;
 }
 
 .wrapper {

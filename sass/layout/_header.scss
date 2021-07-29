@@ -1,4 +1,5 @@
 @import "../abstracts/mixins";
+@import "../core/colors";
 
 .header {
     display: flex;
@@ -15,13 +16,32 @@
 .header__authentication {
     display: flex;
     align-items: center;
+    
+}
+
+.header__authentication .nav {
+    display: flex;
+}
+
+.header__authentication img {
+    padding-right: 8px;
 }
 
 .nav {
     padding: 0 20px;
     font-size: 13px;
+    align-items: center;
 }
+
 
 .header__nav .nav {
     font-weight: bold;
+}
+
+.nav-button {
+    padding: 5px 20px;
+    border-color: $primary-color;
+    border-radius: 5px;
+    background-color: $secondary-color;
+
 }

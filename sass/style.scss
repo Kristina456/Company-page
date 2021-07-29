@@ -1,7 +1,10 @@
-@import "./reset/reset.scss";
+@import "./core/_reset.scss";
+@import "../sass/core/colors";
 @import "./abstracts/mixins";
 @import "./layout/sidebar";
 @import "./layout/header";
+@import "./layout/main";
+
 
 * {
     box-sizing: border-box;
@@ -12,8 +15,10 @@ body {
     width: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: $secondary-color;
 }
 
 .wrapper {
     display: flex;
 }
+
