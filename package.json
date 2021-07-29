@@ -1,0 +1,22 @@
+{
+  "name": "mono__company-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kristina456/Mono__Company-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kristina456/Mono__Company-page/issues"
+  },
+  "homepage": "https://github.com/Kristina456/Mono__Company-page#readme",
+  "dependencies": {
+    "sass": "^1.36.0"
+  }
+}
