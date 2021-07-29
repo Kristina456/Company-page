@@ -1,0 +1,19 @@
+@import "./reset/reset.scss";
+@import "./abstracts/mixins";
+@import "./layout/sidebar";
+@import "./layout/header";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
