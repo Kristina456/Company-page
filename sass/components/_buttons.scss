@@ -1,0 +1,17 @@
+@mixin button($width:145px) {
+    width: $width;
+    height: 45px;
+    background-color: $primary-color;
+    color: $fourth-color;
+    border: none;
+}
+
+
+.main__section-one__button button {
+    @include button;
+}
+
+.main__section-five__button button {
+    @include button($width:225px);
+
+}

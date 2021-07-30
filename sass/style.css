@@ -52,6 +52,22 @@ table {
   border-spacing: 0;
 }
 
+.main__section-one__button button {
+  width: 145px;
+  height: 45px;
+  background-color: #0052b4;
+  color: white;
+  border: none;
+}
+
+.main__section-five__button button {
+  width: 225px;
+  height: 45px;
+  background-color: #0052b4;
+  color: white;
+  border: none;
+}
+
 .sidebar {
   min-width: 200px;
   border-right: 1px solid white;
@@ -130,6 +146,22 @@ table {
   background-color: #E5E5E5;
 }
 
+.main__section-one__button button {
+  width: 145px;
+  height: 45px;
+  background-color: #0052b4;
+  color: white;
+  border: none;
+}
+
+.main__section-five__button button {
+  width: 225px;
+  height: 45px;
+  background-color: #0052b4;
+  color: white;
+  border: none;
+}
+
 .main__section-one {
   margin: 70px 0px;
 }
@@ -148,14 +180,6 @@ table {
   font-size: 20px;
   line-height: 35px;
   color: #6a6a6a;
-}
-
-.main__section-one__button button {
-  width: 145px;
-  height: 45px;
-  background-color: #0052b4;
-  color: white;
-  border: none;
 }
 
 .main__section-two__title, .main__section-four__title {

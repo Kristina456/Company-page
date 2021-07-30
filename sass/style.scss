@@ -2,10 +2,10 @@
 @import "./core/colors";
 @import "./core/typography";
 @import "./abstracts/mixins";
+@import "./components/buttons";
 @import "./layout/sidebar";
 @import "./layout/header";
 @import "./layout/main/main";
-
 
 
 * {
@@ -23,4 +23,3 @@ body {
 .wrapper {
     display: flex;
 }
-

@@ -1,4 +1,4 @@
-
+@import "../../components/buttons";
 
 .main__section-one {
     margin: 70px 0px;
@@ -20,10 +20,5 @@
     color: $third-color;
 }
 
-.main__section-one__button button {
-    width: 145px;
-    height: 45px;
-    background-color: $primary-color;
-    color: $fourth-color;
-    border: none;
-}
+
+
