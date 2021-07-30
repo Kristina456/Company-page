@@ -235,9 +235,8 @@ table {
   background-color: #FFFFFF;
   width: 230px;
   height: 135px;
-  margin: 12px;
+  margin-right: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -245,6 +244,17 @@ table {
   position: relative;
   top: -65px;
   left: 20px;
+}
+
+.card__results__text--number {
+  font-size: 25px;
+  color: #0052b4;
+  font-weight: 900px;
+}
+
+.ard__results__text--text {
+  font-size: 16px;
+  color: #6a6a6a;
 }
 
 .main {
