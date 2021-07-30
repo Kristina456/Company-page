@@ -1,0 +1,40 @@
+.footer__main {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+}
+
+.footer__main--left {
+   max-width: 50%;
+}
+
+.footer__main--right {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__main__paragraf {
+    max-width: 320px;
+    font-size: 13px;
+}
+
+.footer__main-title {
+    margin-bottom:25px ;
+}
+
+.footer__main-title img {
+    margin-bottom: 20px;
+}
+
+.footer__main-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;;
+}
+
+.footer__main-contact__text {
+    margin-left: 10px;
+}
+
+
