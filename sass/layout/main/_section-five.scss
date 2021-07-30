@@ -1,0 +1,57 @@
+@import "../../abstracts/extend";
+
+
+.main__section-five {
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+
+}
+
+.main__section-five__form {
+    width: 500px;
+}
+
+.main__section-five__title {
+    @extend %main-title__title;
+}
+
+.form-contol {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.form-label {
+    font-size: 10px;
+    color: $seventh-color;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    border: none;
+    background-color: $secondary-color;
+    box-shadow: 0 1px $sixth-color;
+}
+
+.form-textarea {
+    box-shadow: none;
+}
+
+.form-checkbox__item {
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox--button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid $seventh-color;
+    border-radius: 5px;
+}
+
+.form-checkbox--text {
+    font-size: 15px;
+    margin-left: 15px;
+    color: $sixth-color;
+}

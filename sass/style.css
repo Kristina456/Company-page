@@ -163,7 +163,7 @@ table {
   margin: 100px 0;
 }
 
-.section-two__title--title, .main__section-four__title--title {
+.section-two__title--title, .main__section-four__title--title, .main__section-five__title {
   font-size: 48px;
   color: #0052b4;
   font-weight: 900;
@@ -248,7 +248,7 @@ table {
   margin: 100px 0;
 }
 
-.section-two__title--title, .main__section-four__title--title {
+.section-two__title--title, .main__section-four__title--title, .main__section-five__title {
   font-size: 48px;
   color: #0052b4;
   font-weight: 900;
@@ -316,6 +316,95 @@ table {
 
 .card__results__text--text {
   font-size: 16px;
+  color: #9DA8B6;
+}
+
+.main__section-two__title, .main__section-four__title {
+  max-width: 650px;
+  margin: 100px 0;
+}
+
+.section-two__title--title, .main__section-four__title--title, .main__section-five__title {
+  font-size: 48px;
+  color: #0052b4;
+  font-weight: 900;
+  margin: 40px 0;
+}
+
+.main__section-two, .main__section-four {
+  width: 80%;
+}
+
+.section-two__main--title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #00367a;
+  line-height: 28px;
+}
+
+.main__section-five {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 200px;
+}
+
+.main__section-five__form {
+  width: 500px;
+}
+
+.form-contol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.form-label {
+  font-size: 10px;
+  color: #0052B4;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  border: none;
+  background-color: #E5E5E5;
+  -webkit-box-shadow: 0 1px #9DA8B6;
+          box-shadow: 0 1px #9DA8B6;
+}
+
+.form-textarea {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-checkbox__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-checkbox--button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #0052B4;
+  border-radius: 5px;
+}
+
+.form-checkbox--text {
+  font-size: 15px;
+  margin-left: 15px;
   color: #9DA8B6;
 }
 
