@@ -43,7 +43,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -59,29 +59,51 @@ table {
 
 .sidebar__logo {
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 0;
-  justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 50px;
 }
 
 .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__authentication {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__authentication .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -92,7 +114,9 @@ table {
 .nav {
   padding: 0 20px;
   font-size: 13px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__nav .nav {
@@ -134,19 +158,19 @@ table {
   border: none;
 }
 
-.main__section-four__title, .main__section-two__title {
+.main__section-two__title, .main__section-four__title {
   max-width: 650px;
   margin: 100px 0;
 }
 
-.main__section-four__title--title, .section-two__title--title {
+.section-two__title--title, .main__section-four__title--title {
   font-size: 48px;
   color: #0052b4;
   font-weight: 900;
   margin: 40px 0;
 }
 
-.main__section-four, .main__section-two {
+.main__section-two, .main__section-four {
   width: 80%;
 }
 
@@ -164,27 +188,49 @@ table {
 }
 
 .section-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 200px 0px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .section--text {
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section--img-right {
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section--img-left {
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .text {
@@ -197,19 +243,19 @@ table {
   color: #6a6a6a;
 }
 
-.main__section-four__title, .main__section-two__title {
+.main__section-two__title, .main__section-four__title {
   max-width: 650px;
   margin: 100px 0;
 }
 
-.main__section-four__title--title, .section-two__title--title {
+.section-two__title--title, .main__section-four__title--title {
   font-size: 48px;
   color: #0052b4;
   font-weight: 900;
   margin: 40px 0;
 }
 
-.main__section-four, .main__section-two {
+.main__section-two, .main__section-four {
   width: 80%;
 }
 
@@ -227,8 +273,11 @@ table {
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .card__results {
@@ -236,9 +285,15 @@ table {
   width: 230px;
   height: 135px;
   margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__results__img {
@@ -252,7 +307,8 @@ table {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -264,7 +320,8 @@ body {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+@import "../../abstracts/extend";
+
+.main__section-four {
+    @extend %main__section--width;
+}
+
+.main__section-four__title {
+    @extend %main-width;
+}
+
+.main__section-four__title--title {
+    @extend %main-title__title}
+
+.main__section-four__title--text {
+    font-size: 16px;
+    color: $third-color;
+    line-height: 24px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__results {
+    background-color: #FFFFFF;
+    width: 230px;
+    height: 135px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__results__img {
+    position: relative;
+    top: -65px;
+    left: 20px;
+}

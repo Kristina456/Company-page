@@ -1,1 +1,9 @@
 $height-first:50px;
+
+@mixin justify-img($flex:flex-end){
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: $flex;
+}
+
+

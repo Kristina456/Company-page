@@ -1,9 +1,10 @@
 @import "./core/_reset.scss";
-@import "../sass/core/colors";
+@import "./core/colors";
+@import "./core/typography";
 @import "./abstracts/mixins";
 @import "./layout/sidebar";
 @import "./layout/header";
-@import "./layout/main";
+@import "./layout/main/main";
 
 
 
@@ -15,7 +16,7 @@ html,
 body {
     width: 100%;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: $primary-font;
     background-color: $secondary-color;
 }
 

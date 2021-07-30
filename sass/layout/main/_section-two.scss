@@ -1,25 +1,22 @@
+@import "../../abstracts/extend";
 
 .main__section-two {
-    width: 80%;
+    @extend %main__section--width;
 }
 
 .main__section-two__title {
-    max-width: 650px;
-    margin: 100px 0;
+    @extend %main-width;
 
 }
 
 .section-two__title--title {
-   font-size: 48px; 
-   color: $primary-color;
-   font-weight: 900;
-   margin: 40px 0;
+   @extend %main-title__title;
 }
 
 .section-two__title--main {
-font-size: 20px;
-line-height: 28px;
-color: $third-color;
+    font-size: 20px;
+    line-height: 28px;
+    color: $third-color;
 }
 
 .section-two {
@@ -35,10 +32,12 @@ color: $third-color;
 
 }
 
-.section--img {
-    flex: 0 0 50%;
-    display: flex;
-    justify-content: flex-end;
+.section--img-right {
+    @include justify-img;
+}
+
+.section--img-left {
+    @include justify-img($flex: flex-start)
 }
 
 .text {
@@ -46,10 +45,7 @@ color: $third-color;
 }
 
 .section-two__main--title {
-    font-weight: bold;
-    font-size: 20px;
-    color: $fifth-color;
-    line-height: 28px;
+   @extend %section__main--title
 
 }
 
