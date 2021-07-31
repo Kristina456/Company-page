@@ -1,21 +1,27 @@
+@import "../../core/colors";
+
 .footer__main {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
     padding: 100px 0;
+    margin: 0 $primary-margin;
 }
 
 .footer__main--left {
-   max-width: 50%;
+    flex-grow: 0.5;
+    padding-right: 10px;
 }
 
 .footer__main--right {
-    
+    flex-grow: 0.5;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .footer__main__paragraf {
-    max-width: 320px;
+    width: 320px;
     font-size: 13px;
 }
 
@@ -37,4 +43,18 @@
     margin-left: 10px;
 }
 
+.footer__main__pad {
+    padding-right: 10px;
+}
+.footer__main__pad h4 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
 
+}
+
+.footer__main__pad li {
+    color: $seventh-color;
+    margin-top: 8px;
+    font-size: 13px;
+}

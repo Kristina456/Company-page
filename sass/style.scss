@@ -6,7 +6,7 @@
 @import "./layout/sidebar";
 @import "./layout/header";
 @import "./layout/main/main";
-@import "./layout/footer";
+@import "./layout/footer/footer";
 
 
 * {
@@ -24,12 +24,18 @@ body {
 /* This wrapper class is breaking responsivness */
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+}
+
+.sidebar {
+    flex-basis: 200px;
+    flex-grow: 2;
 }
 
 .main-wrapper {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 50%;
+    min-width: 80%;
 }
 
