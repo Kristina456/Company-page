@@ -4,17 +4,17 @@
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    padding: 100px 0;
+    padding: 50px 0;
     margin: 0 $primary-margin;
 }
 
 .footer__main--left {
-    flex-grow: 0.5;
-    padding-right: 10px;
+    flex-grow: 1;
+    
 }
 
 .footer__main--right {
-    flex-grow: 0.5;
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -44,8 +44,10 @@
 }
 
 .footer__main__pad {
-    padding-right: 10px;
+  flex: 1;
+  padding-right:10px;
 }
+
 .footer__main__pad h4 {
     font-weight: bold;
     font-size: 16px;
