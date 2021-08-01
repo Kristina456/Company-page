@@ -1,47 +1,54 @@
 @import "../abstracts/mixins";
 @import "../core/colors";
+@import "../components/buttons";
+
+@mixin header-navigation ($justify-countent:flex-start) {
+    flex-grow: 1;
+    display: flex;
+    justify-content: $justify-countent;
+    align-items: center;
+    min-height: $header-high;
+}
 
 .header {
     display: flex;
-    flex: 0;
-    justify-content: space-between;
-    height: $height-first;
+    height: 50px;
+}
+
+.header__item {
+    margin-left: $primary-margin;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .header__nav {
+    @include header-navigation;
+}
+
+.header__nav ul {
     display: flex;
-    align-items: center;
+}
+
+.header__nav li {
+    padding-right: 45px;
 }
 
 .header__authentication {
-    display: flex;
-    align-items: center;
-    
+    @include header-navigation($justify-countent:flex-end)
 }
 
-.header__authentication .nav {
+.header__authentication ul {
     display: flex;
 }
 
-.header__authentication img {
-    padding-right: 8px;
-}
-
-.nav {
-    padding: 0 20px;
-    font-size: 13px;
+.header__authentication li {
+    padding-right: 45px;
+    display: flex;
     align-items: center;
 }
 
-
-.header__nav .nav {
-    font-weight: bold;
-}
-
-.nav-button {
-    padding: 5px 20px;
-    border-color: $primary-color;
-    border-radius: 5px;
-    background-color: $secondary-color;
-
+.header__authentication li img {
+    margin-right: 10px;
 }

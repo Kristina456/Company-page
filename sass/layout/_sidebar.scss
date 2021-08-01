@@ -2,14 +2,12 @@
 
 .sidebar {
     min-width: 200px;
-    box-shadow: 1px 0px $eight-color;
+    box-shadow: 1px 0 $eight-color;
 }
 
 .sidebar__logo {
-    height: $height-first;
+    height: $header-high;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-

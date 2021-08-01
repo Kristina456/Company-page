@@ -6,12 +6,18 @@
     border: none;
 }
 
-
 .main__section-one__button button {
     @include button;
 }
 
 .main__section-five__button button {
     @include button($width:225px);
+}
 
+.nav-button {
+    padding: 5px 20px;
+    width: 100px;
+    border-color: $primary-color;
+    border-radius: 5px;
+    background-color: $secondary-color;
 }
