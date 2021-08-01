@@ -1,16 +1,11 @@
 @import "../../abstracts/extend";
 
-.main__section-two {
-    @extend %main__section--width;
-}
-
 .main__section-two__title {
     @extend %main-width;
-
 }
 
 .section-two__title--title {
-   @extend %main-title__title;
+    @extend %main-title__title;
 }
 
 .section-two__title--main {
@@ -21,37 +16,43 @@
 
 .section-two {
     display: flex;
-    margin: 200px 0px;
-    flex: 1;
+    margin: 200px 0;
 }
 
-.section--text {
-   flex: 0 0 50%;
-   display: flex ;
-   align-items: center;
-   margin: 20px
-
+.section-two__text {
+    flex: 1 0 50%;
+    flex-wrap: wrap;
 }
 
-.section--img-right {
-    @include justify-img;
+.section-two__text__item {
+    max-width: 430px;
 }
 
-.section--img-left {
-    @include justify-img($flex: flex-start)
+.section-two__image {
+    flex: 1 0 50%;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
-.text {
-    max-width: 426px;
+.section-two__image__item {
+    max-width: 300px;
 }
 
-.section-two__main--title {
-   @extend %section__main--title
-
+.section-two__image__item img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.section-two__main--text {
-    margin: 16px 0px;
+.image--left {
+    display: flex;
+    justify-content: end;
+}
+
+.section-two__text__item h3 {
+    @extend %section__main--title}
+
+.section-two__text__item p {
+    margin: 16px 0;
     line-height: 24px;
     color: $third-color;
 }

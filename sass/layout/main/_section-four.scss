@@ -1,17 +1,14 @@
 @import "../../abstracts/extend";
 
-.main__section-four {
-    @extend %main__section--width;
-}
 
 .main__section-four__title {
     @extend %main-width;
 }
 
-.main__section-four__title--title {
+.main__section-four__title h3 {
     @extend %main-title__title}
 
-.main__section-four__title--text {
+.main__section-four__title p {
     font-size: 16px;
     color: $third-color;
     line-height: 24px;
@@ -19,14 +16,15 @@
 
 .card {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card__results {
     background-color: #FFFFFF;
     width: 232px;
     min-width: 150px;
-    height: 135px;
-    margin-right: 24px;
+    min-height: 135px;
+    margin: 12px 12px 12px 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -34,12 +32,10 @@
     border-radius: 5px;
 }
 
-
 .card__results__img {
     position: absolute;
     top: -20px;
     left: 24px;
-
 }
 
 .card__results__text {

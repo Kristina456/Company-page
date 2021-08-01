@@ -22,7 +22,7 @@
 }
 
 .footer__legal--right {
-    flex-grow:1;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     margin: $footer-margin;
@@ -34,6 +34,7 @@
 }
 
 .footer__legal--right div {
+    flex: 1;
     @extend %font_and_color;
     width: fit-content;
     display: inline;

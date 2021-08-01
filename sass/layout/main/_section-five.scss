@@ -2,18 +2,36 @@
 
 
 .main__section-five {
+    margin: 200px 0 100px;
+}
+
+.main__section-five h3 {
+    padding-bottom: 40px;
+}
+
+.main__section-five h3 {
+    @extend %main-title__title;
+    margin-bottom: 0;
+}
+
+.main__section-five__item {
     display: flex;
-    flex-direction: row;
-    padding: 200px 0;
+    flex-wrap: wrap;
 
 }
 
 .main__section-five__form {
-    width: 500px;
+    flex: 1 0 50%;
 }
 
-.main__section-five__title {
-    @extend %main-title__title;
+.main__section-five__map {
+    flex: 1 0 50%;
+}
+
+.map__item {
+    max-width: 550px;
+    flex: 1 0 100%;
+    margin: 0 auto;    
 }
 
 .form-contol {
