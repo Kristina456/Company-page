@@ -653,19 +653,29 @@ table {
 }
 
 .popover {
-  background-color: red;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   position: absolute;
-  display: flex;
+  display: flex !important;
+  flex-direction: row;
   flex-wrap: wrap;
   top: 100px;
   left: 50px;
+  padding: 15px 0;
 }
 .popover--x {
-  background-color: blue;
   cursor: pointer;
+  flex: 0 0 20%;
+  text-align: center;
+  padding-top: 5px;
 }
 .popover--text {
-  background-color: aqua;
+  flex: 0 0 80%;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #9DA8B6;
+  padding-right: 5px;
 }
 
 * {
