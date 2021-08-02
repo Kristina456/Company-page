@@ -399,6 +399,10 @@ table {
   padding: 20px;
 }
 
+.map__item div iframe {
+  border-radius: 15px;
+}
+
 .form-contol {
   display: flex;
   flex-direction: column;
@@ -628,11 +632,6 @@ body {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 80%;
-}
-
-/* MOVE THIS WHERE IT BELONGS. Just a border radius for google maps */
-.map__item > div > iframe {
-  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
