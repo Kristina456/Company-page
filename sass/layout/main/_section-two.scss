@@ -1,5 +1,4 @@
 @import "../../abstracts/extend";
-
 .main__section-two__title {
     @extend %main-width;
 }
@@ -14,9 +13,14 @@
     color: $third-color;
 }
 
+.main__section-two__main {
+    width: 80%;
+}
+
 .section-two {
     display: flex;
     margin: 200px 0;
+    margin-right: $sidebar-width;
 }
 
 .section-two__text {
@@ -49,7 +53,8 @@
 }
 
 .section-two__text__item h3 {
-    @extend %section__main--title}
+    @extend %section__main--title
+}
 
 .section-two__text__item p {
     margin: 16px 0;

@@ -17,11 +17,15 @@
 .main__section-five__item {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .main__section-five__form {
     flex: 1 0 50%;
+    padding-top: 20px;
+}
+
+.main__section-five__form form {
+    max-width: 450px;
 }
 
 .main__section-five__map {
@@ -32,6 +36,7 @@
     max-width: 550px;
     flex: 1 0 100%;
     margin: 0 auto;    
+    padding: 20px;
 }
 
 .form-contol {
