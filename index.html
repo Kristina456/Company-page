@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
 
 <body>
@@ -119,13 +121,21 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="section-two__image image--left">
+                            <div class="section-two__image image--right">
                                 <div class="section-two__image__item">
                                     <img src="./images/illustration 1(2).png">
-
-                                    <div>
-                                        <div>X</div>
+                                    <div class="section-two__hover__item">
                                         <div>
+                                            <span class="hover-dot__item" onmouseover="openParagraf()">
+                                                <div class="hover-dot">1</div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div style="display: none;" class="popover" id="popover">
+                                        <div>
+                                            <div class="popover--x" onclick="closeParagraf()">X</div>
+                                        </div>
+                                        <div class="popover--text">
                                             Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
                                         </div>
                                     </div>
@@ -133,8 +143,8 @@
                             </div>
                         </div>
 
-                        <div class="section-two">
-                            <div class="section-two__image">
+                        <div class="section-two image--left">
+                            <div class="section-two__image ">
                                 <div class="section-two__image__item">
                                     <img src="./images/illustration 1(1).png">
                                 </div>
@@ -162,7 +172,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="section-two__image image--left">
+                            <div class="section-two__image image--right">
                                 <div class="section-two__image__item">
                                     <img src="./images/illustration 1.png">
                                 </div>
@@ -430,11 +440,8 @@
                 </div>
             </div>
         </div>
-</body>
-</body>
 
-</html>
-</div>
+        <script src="index.js"></script>
 </body>
 
 </html>

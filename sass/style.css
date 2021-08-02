@@ -73,7 +73,7 @@ table {
   width: 100px;
   border-color: #0052b4;
   border-radius: 5px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .sidebar {
@@ -109,7 +109,7 @@ table {
   width: 100px;
   border-color: #0052b4;
   border-radius: 5px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .header {
@@ -184,7 +184,7 @@ table {
   width: 100px;
   border-color: #0052b4;
   border-radius: 5px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .main__section-one {
@@ -238,6 +238,7 @@ table {
 
 .section-two {
   display: flex;
+  flex-direction: row;
   margin: 200px 0;
   margin-right: 200px;
 }
@@ -259,14 +260,11 @@ table {
 
 .section-two__image__item {
   max-width: 300px;
+  max-height: 250px;
+  position: relative;
 }
 
-.section-two__image__item img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.image--left {
+.image--right {
   display: flex;
   justify-content: end;
 }
@@ -277,6 +275,23 @@ table {
   color: #6a6a6a;
 }
 
+@media (max-width: 999px) {
+  .section-two {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+  }
+
+  .image--left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-two__image__item img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
 .main__section-four__title, .main__section-two__title {
   max-width: 650px;
   margin: 100px 0;
@@ -417,7 +432,7 @@ table {
 
 .form-input {
   border: none;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   box-shadow: 0 1px #9DA8B6;
 }
 
@@ -602,6 +617,57 @@ table {
   font-size: 15px;
 }
 
+.section-two__hover__item {
+  max-width: 250px;
+  height: 100px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 30%;
+  bottom: 10%;
+}
+
+.section-two__image__item {
+  position: relative;
+}
+
+.hover-dot__item {
+  width: 33px;
+  height: 35px;
+  background-color: rgba(255, 118, 22, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.hover-dot {
+  width: 22px;
+  height: 22px;
+  background-color: #ff7616;
+  color: transparent;
+  border-radius: 50px;
+}
+
+.popover {
+  background-color: red;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 100px;
+  left: 50px;
+}
+.popover--x {
+  background-color: blue;
+  cursor: pointer;
+}
+.popover--text {
+  background-color: aqua;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -611,10 +677,9 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
-/* This wrapper class is breaking responsivness */
 .wrapper {
   display: flex;
   flex-wrap: wrap;

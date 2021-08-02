@@ -1,0 +1,51 @@
+@import "../core/colors";
+.section-two__hover__item {
+    max-width: 250px;
+    height: 100px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+}
+
+.section-two__image__item {
+    position: relative;
+}
+
+.hover-dot__item {
+    width: 33px;
+    height: 35px;
+    background-color: rgba(255, 118, 22, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.hover-dot {
+    width: 22px;
+    height: 22px;
+    background-color: $dot-color;
+    color: transparent;
+    border-radius: 50px;
+}
+
+.popover {
+    background-color: red;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 100px;
+    left: 50px;
+    &--x {
+        background-color: blue;
+        cursor: pointer;
+    }
+    &--text {
+        background-color: aqua;
+    }
+}
