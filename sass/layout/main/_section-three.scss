@@ -2,6 +2,7 @@
 @import "../../core/colors";
 .slideshow__section__title {
     @extend %title-h2;
+    min-height: 120px;
 }
 
 .slideshow__section__main__item {
@@ -15,7 +16,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     padding-right: 10px;
 }
 
@@ -54,7 +54,7 @@
     font-size: 11px;
     line-height: 1.5;
     color: $sixth-color;
-    background-color: rgb(251, 251, 251, 1);
+    background-color: rgba(251, 251, 251, 1);
     box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
 }
