@@ -185,16 +185,32 @@
                 <!-- carousel -->
                 <div class="main__section-three">
                     <div class="slideshow">
+
                         <div class="slideshow__dots">
-                            <span class="dot" onclick="currentSlide(1)">Extraction</span>
-                            <span class="dot" onclick="currentSlide(2)">Transport</span>
-                            <span class="dot" onclick="currentSlide(3)">Refining</span>
-                            <span class="dot" onclick="currentSlide(4)">Export</span>
+                            <span class="dot" onclick="currentSlide(1)">
+                                <div class="dot__img dot__img--inactive"></div>
+                                <div class="dot__text dot__text--inactive">Extraction</div>    
+                            </span>
+                            <span class="dot" onclick="currentSlide(2)">
+                                <div class="dot__img dot__img--inactive"></div>
+                               <div class="dot__text dot__text--inactive">Transport</div>
+                            </span>
+                            <span class="dot" onclick="currentSlide(3)">
+                                <div class="dot__img dot__img--inactive"></div>
+                               <div class="dot__text dot__text--inactive">Refining</div>
+                            </span>
+                            <span class="dot" onclick="currentSlide(4)">
+                                <div class="dot__img dot__img--inactive"></div>
+                               <div class="dot__text dot__text--inactive">Export</div>
+                            </span>
                         </div>
-                        <div>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
+                        <div class="slideshow__dots-bar" aria-hidden="true"> </div>
+
+                        <!-- todo: include this into the circles code above
+                            <div>
+                            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                            <a class="next" onclick="plusSlides(1)">&gt;</a>
+                        </div> -->
                         <div>
                             <div class="slideshow__section slide-one">
                                 <div class="slideshow__section__title__item">
