@@ -4,7 +4,7 @@
     }
     
     .section-two__title--title {
-        @extend %main-title__title;
+        @extend %title-h2;
     }
     
     .section-two__title--main {
@@ -51,7 +51,7 @@
     }
     
     .section-two__text__item h3 {
-        @extend %section__main--title
+        @extend %title-h3
     }
     
     .section-two__text__item p {
