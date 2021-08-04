@@ -32,11 +32,13 @@
 }
 
 .header__nav li {
-    padding-right: 45px;
+    padding-right: 35px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .header__authentication {
-    @include header-navigation($justify-countent: flex-end)
+    @include header-navigation($justify-countent: flex-end);
 }
 
 .header__authentication ul {
@@ -44,7 +46,8 @@
 }
 
 .header__authentication li {
-    padding-right: 45px;
+    padding-right: 35px;
+    font-size: 13px;
     display: flex;
     align-items: center;
 }

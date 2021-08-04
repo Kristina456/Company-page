@@ -276,7 +276,9 @@ table {
 }
 
 .header__nav li {
-  padding-right: 45px;
+  padding-right: 35px;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 .header__authentication {
@@ -302,7 +304,8 @@ table {
 }
 
 .header__authentication li {
-  padding-right: 45px;
+  padding-right: 35px;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,6 +565,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
 }
 
 .slideshow__main__right__img > div {
