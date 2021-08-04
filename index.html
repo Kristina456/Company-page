@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,10 +28,10 @@
                 <div class="header__item">
                     <div class="header__nav">
                         <ul>
-                            <li class="nav">Services</li>
-                            <li class="nav">Projects</li>
-                            <li class="nav">About us</li>
-                            <li class="nav">Blog</li>
+                            <li>Services</li>
+                            <li>Projects</li>
+                            <li>About us</li>
+                            <li>Blog</li>
                         </ul>
                     </div>
                     <div class="header__authentication">
@@ -42,6 +43,34 @@
                             <li>
                                 <span><img src="./images/Vector(1).png" alt="contact us"></span>
                                 <span>Contact us</span>
+                            </li>
+                            <li>
+                                <button class="nav-button">Sign up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__small-screan-nav">
+                    <div class="small-screan-nav__left">
+                        <a href="javascript:void(0);" class="small-screan-nav__left__icon" onclick="hamburgerMenu()"><i class="fa fa-bars"></i>
+                        </a>
+                        <div id="small-nav" class="hide">
+                            <ul>
+                                <li class="small-nav__link">Services</li>
+                                <li class="small-nav__link">Projects</li>
+                                <li class="small-nav__link">About us</li>
+                                <li class="small-nav__link">Blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="small-screan-nav__right">
+                        <ul>
+                            <li>
+                                <span><img src="./images/Vector.png" alt="log in"></span>
+                            </li>
+                            <li>
+                                <span><img src="./images/Vector(1).png" alt="contact us"></span>
                             </li>
                             <li>
                                 <button class="nav-button">Sign up</button>
@@ -544,6 +573,7 @@
         </div>
         <script src="dots.js"></script>
         <script src="carousel.js"></script>
+        <script src="hamburgerMenu.js"></script>
 </body>
 
 </html>

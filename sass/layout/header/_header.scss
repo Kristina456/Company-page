@@ -1,7 +1,7 @@
-@import "../abstracts/mixins";
-@import "../core/colors";
-@import "../components/buttons";
-
+@import "../../abstracts/mixins";
+@import "../../core/colors";
+@import "../../components/buttons";
+@import "./header-small";
 @mixin header-navigation ($justify-countent:flex-start) {
     flex-grow: 1;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 .header__authentication {
-    @include header-navigation($justify-countent:flex-end)
+    @include header-navigation($justify-countent: flex-end)
 }
 
 .header__authentication ul {
@@ -51,4 +51,19 @@
 
 .header__authentication li img {
     margin-right: 10px;
+}
+
+@media screen and (min-width:900px) {
+    .header__small-screan-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header__small-screan-nav {
+        display: flex;
+    }
+    .header__item {
+        display: none;
+    }
 }
