@@ -1,4 +1,4 @@
-@import "../abstracts/mixins";
+@import "../../abstracts/mixins";
 .sidebar {
     min-width: $sidebar-width;
     box-shadow: 1px 0 $eight-color;
@@ -9,4 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sidebar__logo img {
+    height: 25px;
 }

@@ -1,16 +1,19 @@
 @import "../../abstracts/extend";
 @import "../../components/buttons";
-.header__small-screan-nav {
+.header__small-screen-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     width: 80%;
     margin-left: $primary-margin;
 }
 
-.small-screan-nav__left {
+.small-screen-nav__left {
     flex: 1 0 30%;
+}
+
+.small-screen-nav__right {
+    flex: 1 0 70%;
 }
 
 .hide {
@@ -18,37 +21,33 @@
 }
 
 .show {
-    display: block;
-    background-color: rgb(255, 255, 255);
     position: absolute;
-    border-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.18);
     cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    li {
+        padding: 20px;
+    }
+    li:hover {
+        background-color: red;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
-.small-nav__link:hover {
-    background-color: $sixth-color;
-}
-
-.small-nav__link {
-    padding: 5px 0;
-    padding: 10px;
-}
-
-.small-screan-nav__left__icon {
+.small-screen-nav__left__icon {
     position: relative;
 }
 
-.small-screan-nav__right {
-    flex: 1 0 70%;
-}
-
-.small-screan-nav__right ul {
+.small-screen-nav__right ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.small-screan-nav__right li {
+.small-screen-nav__right li {
     padding-right: 20px;
 }
