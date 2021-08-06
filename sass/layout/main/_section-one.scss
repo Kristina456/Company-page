@@ -1,6 +1,7 @@
 @import "../../components/buttons";
+@import "../../core/typography";
 .main__section-one {
-    margin: 70px 0px;
+    margin: $primary-margin 0px;
 }
 
 .main__section-one__title {

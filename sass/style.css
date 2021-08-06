@@ -52,6 +52,7 @@ table {
   border-spacing: 0;
 }
 
+/* margin left */
 .main__section-one__button button {
   width: 145px;
   height: 45px;
@@ -123,7 +124,7 @@ table {
   background-color: #e5e5e5;
 }
 
-.main__section-two__title, .main__section-four__title {
+.main__section-two__title {
   max-width: 650px;
   margin: 100px 0;
 }
@@ -380,6 +381,7 @@ table {
   background-color: #e5e5e5;
 }
 
+/* margin left */
 .main__section-one {
   margin: 70px 0px;
 }
@@ -400,7 +402,7 @@ table {
   color: #6a6a6a;
 }
 
-.main__section-two__title, .main__section-four__title {
+.main__section-two__title {
   max-width: 650px;
   margin: 100px 0;
 }
@@ -417,6 +419,10 @@ table {
   font-size: 20px;
   color: #00367a;
   line-height: 28px;
+}
+
+.main__section-two {
+  margin: 200px auto;
 }
 
 .section-two__title--main {
@@ -509,7 +515,7 @@ table {
   }
 }
 
-.main__section-two__title, .main__section-four__title {
+.main__section-two__title {
   max-width: 650px;
   margin: 100px 0;
 }
@@ -650,7 +656,7 @@ table {
   }
 }
 
-.main__section-two__title, .main__section-four__title {
+.main__section-two__title {
   max-width: 650px;
   margin: 100px 0;
 }
@@ -667,6 +673,14 @@ table {
   font-size: 20px;
   color: #00367a;
   line-height: 28px;
+}
+
+.main-section-four {
+  margin: 200px 0;
+}
+
+.main__section-four__title {
+  margin: 50px 0;
 }
 
 .main__section-four__title p {
@@ -725,7 +739,7 @@ table {
   color: #9da8b6;
 }
 
-.main__section-two__title, .main__section-four__title {
+.main__section-two__title {
   max-width: 650px;
   margin: 100px 0;
 }
@@ -940,6 +954,7 @@ table {
   color: #0052b4;
 }
 
+/* margin left */
 .footer__legal p, .footer__legal--right div {
   color: #9da8b6;
   font-size: 13px;
@@ -996,7 +1011,7 @@ table {
 
 .progress-dots__item {
   width: 90%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .progress-dots {
@@ -1035,7 +1050,7 @@ table {
           align-items: center;
 }
 
-.progres-dot__item--first {
+.progres-dot__item__first {
   width: 35px;
   height: 35px;
   border: 1px solid #ff7616;
@@ -1052,7 +1067,7 @@ table {
   position: relative;
 }
 
-.progress-dot--first {
+.progress-dot__first {
   background-color: #ff7616;
   width: 25px;
   height: 25px;

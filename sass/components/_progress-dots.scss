@@ -1,7 +1,7 @@
 @import "../core/colors";
 .progress-dots__item {
     width: 90%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .progress-dots {
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &--first {
+    &__first {
         width: 35px;
         height: 35px;
         border: 1px solid $dot-color;
@@ -42,7 +42,7 @@
     text-align: center;
     color: transparent;
     position: relative;
-    &--first {
+    &__first {
         background-color: $dot-color;
         width: 25px;
         height: 25px;

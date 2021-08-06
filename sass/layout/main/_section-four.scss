@@ -1,6 +1,10 @@
 @import "../../abstracts/extend";
+.main-section-four {
+    margin: 200px 0;
+}
+
 .main__section-four__title {
-    @extend %main-width;
+    margin: 50px 0;
 }
 
 .main__section-four__title h3 {

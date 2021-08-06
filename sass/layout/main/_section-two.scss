@@ -1,6 +1,10 @@
     @import "../../abstracts/extend";
+    .main__section-two {
+        margin: 200px auto;
+    }
+    
     .main__section-two__title {
-        @extend %main-width;
+        @extend %main-width-h2;
     }
     
     .section-two__title--title {
