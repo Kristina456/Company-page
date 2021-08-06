@@ -1,0 +1,91 @@
+@import "../core/colors";
+.slideshow {
+    max-height: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow__section {
+    display: none;
+}
+
+.slideshow__dots {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-dot {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.one-dot__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dart {
+    cursor: pointer;
+    transition: 0.6s ease;
+    padding: 5px;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.dot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dot-color;
+    cursor: pointer;
+}
+
+.dot__img {
+    width: 40px;
+    height: 40px;
+}
+
+.dot__text {
+    margin-bottom: 15px;
+}
+
+.dot__img--inactive {
+    background: url('../../images/Group\ 2.1.png') no-repeat center/20px;
+}
+
+.dot__img--active {
+    background: url('../../images/orange-dot.png') no-repeat center/35px;
+}
+
+.dot__text--inactive {
+    display: none;
+    color: $dot-color;
+}
+
+.dot__text--active {
+    display: block;
+    text-align: center;
+    color: $dot-color;
+}
+
+.dot-dart--inactive {
+    display: none;
+}
+
+.dot-dart--active {
+    display: block;
+}
+
+.slideshow__dots-bar {
+    border-top: 2px dashed rgba(205, 205, 205, 1);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 2px;
+    margin-top: -50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,82 @@
+    @import "../../abstracts/extend";
+    .main__section-two {
+        margin: 200px auto;
+    }
+    
+    .main__section-two__title {
+        max-width: 650px;
+        margin: 100px 0;
+    }
+    
+    .section-two__title--title {
+        @extend %title-h2;
+    }
+    
+    .section-two__title--main {
+        font-size: 20px;
+        line-height: 28px;
+        color: $third-color;
+    }
+    
+    .main__section-two__main {
+        width: 80%;
+    }
+    
+    .section-two {
+        display: flex;
+        flex-direction: row;
+        margin: 200px 0;
+        margin-right: $sidebar-width;
+    }
+    
+    .section-two__text {
+        flex: 1 0 50%;
+        flex-wrap: wrap;
+    }
+    
+    .section-two__text__item {
+        max-width: 430px;
+    }
+    
+    .section-two__image {
+        flex: 1 0 50%;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .section-two__image__item {
+        max-width: 300px;
+        max-height: 250px;
+        position: relative;
+    }
+    
+    .image--right {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .section-two__text__item h3 {
+        @extend %title-h3;
+    }
+    
+    .section-two__text__item p {
+        margin: 16px 0;
+        line-height: 24px;
+        color: $third-color;
+    }
+    
+    @media (max-width: 999px) {
+        .section-two {
+            flex-direction: column;
+            align-items: center;
+            margin: 50px auto;
+        }
+        .image--left {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .section-two__image__item img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }

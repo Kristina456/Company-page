@@ -1,0 +1,59 @@
+@import "../../abstracts/extend";
+.main-section-four {
+    margin: 200px 0;
+}
+
+.main__section-four__title {
+    margin: 50px 0;
+}
+
+.main__section-four__title h3 {
+    @extend %title-h2
+}
+
+.main__section-four__title p {
+    font-size: 16px;
+    color: $third-color;
+    line-height: 24px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__results {
+    background-color: #FFFFFF;
+    width: 232px;
+    min-width: 150px;
+    min-height: 135px;
+    margin: 12px 12px 12px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+}
+
+.card__results__img {
+    position: absolute;
+    top: -20px;
+    left: 24px;
+}
+
+.card__results__text {
+    margin-top: 44px;
+    margin-left: 24px;
+}
+
+.card__results__text--number {
+    font-size: 25px;
+    color: $primary-color;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+.card__results__text--text {
+    font-size: 16px;
+    color: $sixth-color;
+}

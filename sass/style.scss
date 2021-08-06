@@ -1,19 +1,53 @@
-@import "./reset/reset.scss";
+@import "./core/_reset.scss";
+@import "./core/colors";
+@import "./core/typography";
 @import "./abstracts/mixins";
-@import "./layout/sidebar";
-@import "./layout/header";
-
+@import "./components/buttons";
+@import "./layout/sidebar/sidebar";
+@import "./layout/header/header";
+@import "./layout/main/main";
+@import "./layout/footer/footer";
+@import "./components/progress-dots";
+@import "./components/popover-section";
+@import "./components/carousel";
 * {
     box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
+    height: 100%;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: $primary-font;
+    background-color: $secondary-color;
 }
 
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+.main-wrapper {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 80%;
+}
+
+
+/* UTILITIES */
+
+.u-hide {
+    display: none;
+}
+
+.u-show {
+    display: block;
 }

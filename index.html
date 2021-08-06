@@ -1,336 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="keywords" content="oil, gas, company, fuel prices"/>
-        <title>SYOAK</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css"/>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="oil, gas, company, fuel prices" />
+    <title>SYOAK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <div class="wrapper">
-            <div class="sidebar">
-                <div class="sidebar__logo">
-                    <span>logo</span>
-                    <span>SYOAK</span>
-                </div>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                <img src="./images/Sign+type.png" alt="company logo">
             </div>
-            
-            <div class="main">
-                <!-- header -->
-                <div class="header">
+        </div>
+
+        <div class="main-wrapper">
+            <!-- header -->
+            <div class="header">
+                <div class="header__big-screen-nav">
                     <div class="header__nav">
-                        <span class="nav">Services</span>
-                        <span class="nav">Projects</span>
-                        <span class="nav">About us</span>
-                        <span class="nav">Blog</span>
+                        <ul>
+                            <li>
+                                <a href="#services">Services</a></li>
+                            <li>
+                                <a href="#projects">Projects</a></li>
+                            <li>
+                                <a href="#about">About us</a></li>
+                            <li>
+                                <a href="#blog">Blog</a></li>
+                        </ul>
                     </div>
                     <div class="header__authentication">
-                        <div class="nav">
-                            <span>img</span>
-                            <span>Log in</span>
+                        <ul>
+                            <li>
+                                <a href="#login">
+                                    <span><img src="./images/Vector.png" alt="log in"></span>
+                                    <span>Log in</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contactUs"><span><img src="./images/Vector(1).png" alt="contact us"></span>
+                                <span>Contact us</span></a>
+
+                            </li>
+                            <li>
+                                <button class="nav-button">Sign up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__small-screen-nav">
+                    <div class="small-screen-nav__left">
+                        <a href="javascript:void(0);" class="small-screen-nav__left__icon" onclick="hamburgerMenu()"><i class="fa fa-bars"></i>
+                        </a>
+                        <div id="small-nav" class="hide">
+                            <ul>
+                                <li class="li">
+                                    <a href="#services">Services</a></li>
+                                <li>
+                                    <a href="#projects">Projects</a></li>
+                                <li>
+                                    <a href="#about">About us</a></li>
+                                <li>
+                                    <a href="#blog">Blog</a></li>
+                            </ul>
                         </div>
-                        <div class="nav">
-                            <span>img</span>
-                            <span>Contact us</span>
+                    </div>
+                    <div class="small-screen-nav__right">
+                        <ul>
+                            <li>
+                                <span><img src="./images/Vector.png" alt="log in"></span>
+                            </li>
+                            <li>
+                                <span><img src="./images/Vector(1).png" alt="contact us"></span>
+                            </li>
+                            <li>
+                                <button class="nav-button">Sign up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <div class="main">
+                <div class="main__section-one">
+                    <div class="main__section-one__title section-one">
+                        <h1>Our business takes the industry of oil & gass to a new level.</h1>
+                    </div>
+                    <div class="main__section-one__main section-one">
+                        <p>We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond.</p>
+                    </div>
+                    <div class="main__section-one__button section-one">
+                        <button>
+                                <span><img src="./images/Arrow.png" alt="Learn more image"></span>
+                                <span>Learn more</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="progress-dots__item">
+                    <div class="progress-dots" aria-hidden="true">
+                        <div class="progres-dot__item progres-dot__item__first">
+                            <div class="progress-dot progress-dot__first">
+                                <div class="progress-dot__text">Extraction</div>
+                            </div>
                         </div>
-                        <div class="nav">
-                            <button>Sign up</button>
+                        <div class="progres-dot__item">
+                            <div class="progress-dot">
+                                <div class="progress-dot__text">2</div>
+                            </div>
+                        </div>
+                        <div class="progres-dot__item">
+                            <div class="progress-dot">
+                                <div class="progress-dot__text">3</div>
+                            </div>
+                        </div>
+                        <div class="progres-dot__item">
+                            <div class="progress-dot">
+                                <div class="progress-dot__text">4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-dots-bar" aria-hidden="true"></div>
+                </div>
+
+                <div class="main__section-two">
+                    <div class="main__section-two__title">
+                        <div class="section-two__title--title">
+                            <h2>SYOAK Solution</h2>
+                        </div>
+                        <div class="section-two__title--main">
+                            <p>
+                                SYOAK industry consist of companies that own and operate extensive networks of pipeline assets to connect producers of oil, natural gas and naturalgas liquids form theprolific North American resources to key markets. We also distribute natural gas to
+                                agrowing base of industrial and residential coustomers throughtransmission pipelines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main__section-two">
+                        <div class="section-two">
+                            <div class="section-two__text">
+                                <div class="section-two__text__item">
+                                    <h3>
+                                        Syoak is unuquely positioned to deliver actionable intelligence to analyze and reduce risk</h3>
+                                    <p>
+                                        We have a long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section-two__image image--right">
+                                <div class="section-two__image__item">
+                                    <img src="./images/illustration2.png">
+                                    <div>
+                                        <!-- POPOVER 1 handler -->
+                                        <div class="section-two__hover__dot-1">
+                                            <div class="hover-dot__item" onmouseover="openParagraf(1)">
+                                                <div class="hover-dot">1</div>
+                                            </div>
+                                        </div>
+                                        <!-- POPOVER 1 -->
+                                        <div style="display: none;" class="popover" id="popover-1">
+                                            <div class="popover__x" onclick="closeParagraf(1)"><img src="./images/Vector(2).png" alt="close"></div>
+                                            <div class="popover__text">
+                                                Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!-- POPOVER 2 handler -->
+                                        <div class="section-two__hover__dot-2">
+                                            <div class="hover-dot__item" onmouseover="openParagraf(2)">
+                                                <div class="hover-dot">2</div>
+                                            </div>
+                                        </div>
+                                        <!-- POPOVER 2 -->
+                                        <div style="display: none;" class="popover" id="popover-2">
+                                            <div class="popover__x" onclick="closeParagraf(2)"><img src="./images/Vector(2).png" alt="close"></div>
+                                            <div class="popover__text">
+                                                Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-two image--left">
+                            <div class="section-two__image ">
+                                <div class="section-two__image__item">
+                                    <img src="./images/illustration3.png">
+                                </div>
+                            </div>
+                            <div class="section-two__text">
+                                <div class="section-two__text__item">
+                                    <h3>
+                                        Our bussines takes the industry of oil and gass to a new level.
+                                    </h3>
+                                    <p>
+                                        We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-two">
+                            <div class="section-two__text">
+                                <div class="section-two__text__item">
+                                    <h3>
+                                        Our bussines takes the industry of oil and gass to a new level.
+                                    </h3>
+                                    <p>
+                                        We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section-two__image image--right">
+                                <div class="section-two__image__item">
+                                    <img src="./images/illustration 1.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- carousel -->
+                <div class="main__section-three">
+                    <div class="slideshow">
+                        <div class="slideshow__dots">
+                            <div class="slideshow__dots__dot one-dot">
+                                <div class="one-dot__item">
+                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
+                                    <div class="dot" onclick="currentSlide(0)">
+                                        <div class="dot__img dot__img--inactive"></div>
+                                    </div>
+                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
+                                </div>
+                                <div class="dot__text dot__text--inactive">Extraction</div>
+                            </div>
+
+                            <div div class="slideshow__dots__dot one-dot">
+                                <div class="one-dot__item">
+                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
+                                    <div class="dot" onclick="currentSlide(1)">
+                                        <div class="dot__img dot__img--inactive"></div>
+                                    </div>
+                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
+                                </div>
+                                <div class="dot__text dot__text--inactive">Transport</div>
+                            </div>
+
+                            <div div class="slideshow__dots__dot one-dot">
+                                <div class="one-dot__item">
+                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
+                                    <div class="dot" onclick="currentSlide(2)">
+                                        <div class="dot__img dot__img--inactive"></div>
+                                    </div>
+                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
+                                </div>
+                                <div class="dot__text dot__text--inactive">Refining</div>
+                            </div>
+
+                            <div div class="slideshow__dots__dot one-dot">
+                                <div class="one-dot__item">
+                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
+                                    <div class="dot" onclick="currentSlide(3)">
+                                        <div class="dot__img dot__img--inactive"></div>
+                                    </div>
+                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
+                                </div>
+                                <div class="dot__text dot__text--inactive">Export</div>
+                            </div>
+                        </div>
+                        <div class="slideshow__dots-bar" aria-hidden="true"> </div>
+
+
+                        <div class="slideshow__section slide-one">
+                            <div class="slideshow__section__title__item">
+                                <h2 class="slideshow__section__title">How <br>We Do IT</h2>
+                            </div>
+
+                            <div class="slideshow__section__main__item slideshow__main">
+                                <div class="slideshow__main__left">
+                                    <div class="slideshow__main__left__title">
+                                        <h3>
+                                            Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                        </h3>
+                                    </div>
+                                    <div class="slideshow__main__left__text">
+                                        <p>
+                                            We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slideshow__main__right">
+                                    <div class="slideshow__main__right__img ">
+                                        <div>
+                                            <img class="slideshow-img" src="./images/carousel/1.png">
+                                            <div class="info-box info-box__first">
+                                                <div class="info-box__image"><img src="./images/carousel/Vector(2).png"></div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                            <div class="info-box info-box__second">
+                                                <div class="info-box__image">
+                                                    <img src="./images/carousel/Vector(2).png">
+                                                </div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slideshow__section slide-two">
+                            <div class="slideshow__section__title__item">
+                                <h2 class="slideshow__section__title">Mode of Transport
+                                </h2>
+                            </div>
+
+                            <div class="slideshow__section__main__item slideshow__main">
+                                <div class="slideshow__main__left">
+                                    <div class="slideshow__main__left__title">
+                                        <h3>
+                                            Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                        </h3>
+                                    </div>
+                                    <div class="slideshow__main__left__text">
+                                        <p>
+                                            We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slideshow__main__right">
+                                    <div class="slideshow__main__right__img ">
+                                        <div>
+                                            <img class="slideshow-img" src="./images/carousel/2.png">
+                                            <div class="info-box info-box__first">
+                                                <div class="info-box__image"><img src="./images/carousel/Vector(2).png"></div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                            <div class="info-box info-box__second">
+                                                <div class="info-box__image">
+                                                    <img src="./images/carousel/Vector(2).png">
+                                                </div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slideshow__section slide-three">
+                            <div class="slideshow__section__title__item">
+                                <h2 class="slideshow__section__title">We Make it <br>More Efficient</h2>
+                            </div>
+
+                            <div class="slideshow__section__main__item slideshow__main">
+                                <div class="slideshow__main__left">
+                                    <div class="slideshow__main__left__title">
+                                        <h3>
+                                            Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                        </h3>
+                                    </div>
+                                    <div class="slideshow__main__left__text">
+                                        <p>
+                                            We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slideshow__main__right">
+                                    <div class="slideshow__main__right__img ">
+                                        <div>
+                                            <img class="slideshow-img" src="./images/carousel/3.png">
+                                            <div class="info-box info-box__first">
+                                                <div class="info-box__image"><img src="./images/carousel/Vector(2).png"></div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                            <div class="info-box info-box__second">
+                                                <div class="info-box__image">
+                                                    <img src="./images/carousel/Vector(2).png">
+                                                </div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slideshow__section slide-four">
+                            <div class="slideshow__section__title__item">
+                                <h2 class="slideshow__section__title">Where Does it Go</h2>
+                            </div>
+
+                            <div class="slideshow__section__main__item slideshow__main">
+                                <div class="slideshow__main__left">
+                                    <div class="slideshow__main__left__title">
+                                        <h3>
+                                            Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                        </h3>
+                                    </div>
+                                    <div class="slideshow__main__left__text">
+                                        <p>
+                                            We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slideshow__main__right">
+                                    <div class="slideshow__main__right__img ">
+                                        <div>
+                                            <img class="slideshow-img" src="./images/carousel/4.png">
+                                            <div class="info-box info-box__first">
+                                                <div class="info-box__image"><img src="./images/carousel/Vector(2).png"></div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                            <div class="info-box info-box__second">
+                                                <div class="info-box__image">
+                                                    <img src="./images/carousel/Vector(2).png">
+                                                </div>
+                                                <div class="info-box__text">
+                                                    Syoak serves more than 2,500 petrol stations globally
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Main -->
-                <div class="main">
-                    <div>
-                        <div>
-                            Our business takes the industry of oil & gass to a new level
-                        </div>
-                        <div>
-                            We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond.
-                        </div>
-                        <div>
-                            <button>
-                                <span>img</span>
-                                <span>Learn more</span>
-                            </button>
-                        </div>
+                <!-- oil cards -->
+                <div class="main__section-four">
+                    <div class="main__section-four__title">
+                        <h3>Our Achievements</h3>
+                        <p>
+                            SYOAK industry consist of companies that own and operate extensive networks of pipeline assets to conect producers of oil, natural gas and natural gas liquids from the prolific North American resources to key markets. We also distribute natural gas to
+                            a growing base of industrial and residential coustomers through transmission pipelines
+                        </p>
                     </div>
 
-                    <!-- courser -->
-                    <div>
-                        <div>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                        <div>
-                            <div class="slides one">
-                                <div>
-                                    <div>How We Do IT</div>
-                                    <div>Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk</div>
-                                    <div>We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                </div>
-                                <div>
-                                    <div>img</div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="main__section-four__results card">
+                        <div class="card__results">
+                            <div class="card__results__img">
+                                <img src="./images/Group 12.png">
                             </div>
-                            <div class="slides two">
-                                <div>
-                                    <div>Mode of transport</div>
-                                    <div>Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk</div>
-                                    <div>We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                </div>
-                                <div>
-                                    <div>img</div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slides three">
-                                <div>
-                                    <div>We Make it More Efficient</div>
-                                    <div>Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk</div>
-                                    <div>We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                </div>
-                                <div>
-                                    <div>img</div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slides five">
-                                <div>
-                                    <div>Where Does it Go</div>
-                                    <div>Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk</div>
-                                    <div>We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                                </div>
-                                <div>
-                                    <div>img</div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div>img</div>
-                                        <div>
-                                            Syoak serves more than 2,500 petrol stations globaly
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>SYOAK Solution</div>
-                        <div>
-                            SYOAK industry consist of companies that own and operate extensive networks of pipeline assets to connect producers of oil, natural gas and naturalgas liquids form theprolific North American resources to key markets. We also distribute natural gas to agrowing base of industrial and residential coustomers throughtransmission pipelines.
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <div>
-                                Syoak is unuquely positioned to deliver actionable intelligence to analyze and reduce risk
-                            </div>
-                            <div>
-                                We have a long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <div class="card__results__text">
+                                <div class="card__results__text--number">2562</div>
+                                <div class="card__results__text--text">Squere Meters Built</div>
                             </div>
                         </div>
-                        <div>
-                            <div>img</div>
-                            <div>
-                                <div>X</div>
-                                <div>
-                                    Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
-                                </div>
+                        <div class="card__results">
+                            <div class="card__results__img"><img src="./images/Group 13.png"></div>
+                            <div class="card__results__text">
+                                <div class="card__results__text--number">184</div>
+                                <div class="card__results__text--text">Computed Projects</div>
+                            </div>
+                        </div>
+                        <div class="card__results">
+                            <div class="card__results__img"><img src="./images/Group 14.png"></div>
+                            <div class="card__results__text">
+                                <div class="card__results__text--number">351</div>
+                                <div class="card__results__text--text">Work With Us</div>
+                            </div>
+                        </div>
+                        <div class="card__results">
+                            <div class="card__results__img"><img src="./images/Group 15.png"></div>
+                            <div class="card__results__text">
+                                <div class="card__results__text--number">65</div>
+                                <div class="card__results__text--text">Ideas Realized</div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div>
-                        <div>img</div>
-                        <div>
-                            <div>
-                                Our bussines takes the industry of oil and gass to a new level.
-                            </div>
-                            <div>
-                                We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <div>
-                                Our bussines takes the industry of oil and gass to a new level.
-                            </div>
-                            <div>
-                                We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </div>
-                        </div>
-                        <div>img</div>
-                    </div>
-
-                    <!-- nesto ne znam -->
-
-                    <div>
-                        <div>Our Achievements</div>
-                        <div>
-                            SYOAK industry consist of companies that own and operate extensive networks of pipeline assets to conect producers of oil, natural gas and natural gas liquids from the prolific North American resources to key markets. We also distribute natural gas to a growing base of industrial and residential coustomers through transmission pipelines
-                        </div>
-                        <div>
-                            <div>
-                                <div>img</div>
-                                <div>2562</div>
-                                <div>Squere Meters Built</div>
-                            </div>
-                            <div>
-                                <div>img</div>
-                                <div>184</div>
-                                <div>Computed Projects</div>
-                            </div>
-                            <div>
-                                <div>img</div>
-                                <div>351</div>
-                                <div>Work With Us</div>
-                            </div>
-                            <div>
-                                <div>img</div>
-                                <div>65</div>
-                                <div>Ideas Realized</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <div>Get in Touch with Us</div>
+                <!-- form -->
+                <div class="main__section-five">
+                    <h3>Get in Touch<br>With Us</h3>
+                    <div class="main__section-five__item">
+                        <div class="main__section-five__form">
                             <form>
-                                <div>
-                                    <label for="name">Name</label>
-                                    <input type="text">
+                                <div class="form-contol">
+                                    <label class="form-label" for="name">Name</label>
+                                    <input class="form-input" type="text" id="name">
                                 </div>
-                                <div>
-                                    <label for="email">Email adress</label>
-                                    <input type="email">
+                                <div class="form-contol">
+                                    <label class="form-label" for="email">Email adress</label>
+                                    <input class="form-input" type="email" id="email">
                                 </div>
-                                <div>
-                                    <textarea name="message" rows="10" cols="30">Write something here...</textarea>
+                                <div class="form-contol">
+                                    <label class="form-label" for="textarea">Message</label>
+                                    <textarea class="form-input form-textarea" name="message" id="textarea" rows="15" cols="10">Write something here...</textarea>
                                 </div>
-                                <div>
-                                    <label for="verification">Verification</label>
-                                    <input type="checkbox">
+                                <div class="form-contol">
+                                    <label class="form-label" for="verification">Verification</label>
+                                    <div class="form-checkbox__item">
+                                        <input class="form-checkbox--button" id="verification" type="checkbox" required>
+                                        <span class="form-checkbox--text">
+                                                I am not a robot
+                                        </span>
+                                    </div>
                                 </div>
-                                <div>
+                                <div class="main__section-five__button">
                                     <button>Send Message</button>
                                 </div>
                             </form>
                         </div>
-                        <div>
-                            map
+                        <div class="main__section-five__map">
+                            <div class="map__item">
+                                <div style="width: 100%;position: relative;">
+                                    <iframe width="100%" height="540px" src="https://maps.google.com/maps?width=550&amp;height=450&amp;hl=en&amp;q=1182%20%20Williams%20Avenue%2C%20San%20Francisco+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no"
+                                        marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
-                    <!-- footer -->
-                    <div class="footer">
-                        <div>
-                            <div>
-                                <div>
-                                    <div>img</div>
-                                    <div>SYOAK</div>
-                                </div>
-                                <div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer__main">
+                    <div class="footer__main--left">
+                        <div class="footer__main__paragraf">
+                            <div class="footer__main-title">
+                                <img src="./images/Sign+type.png" alt="company logo" width="150px">
+                                <p>
                                     We have a long and proud history givin emphasis to environment social and economic outcomes to deliverplaces that respond
-                                </div>
-                                <div>
-                                    <div>img</div>
-                                    <div>1182 Williams Avenue, Sand Francisco</div>
-                                </div>
-                                <div>
-                                    <div>img</div>
-                                    <div>Hello@syoak.com</div>
-                                </div>
+                                </p>
                             </div>
-                            <div>
-                                <div>
-                                    <div>Company</div>
-                                    <div>About us</div>
-                                    <div>Company</div>
-                                    <div>How we do it</div>
-                                </div>
-                                <div>
-                                    <div>Services</div>
-                                    <div>Oil & Gas Industry</div>
-                                    <div>Fuel Management</div>
-                                    <div>Chemical Research</div>
-                                    <div>Power & Energy</div>
-                                    <div>Eco & Biopower</div>
-                                </div>
-                                <div>
-                                    <div>Projects</div>
-                                    <div>Factory</div>
-                                    <div>Industry</div>
-                                    <div>Manufactoring</div>
-                                    <div>Mehanical</div>
-                                </div>
+                            <div class="footer__main-contact">
+                                <span><img src="./images/Shape(1).png"></span>
+                                <span class="footer__main-contact__text">
+                                    <address>1182 Williams Avenue, Sand Francisco</address>
+                             </span>
                             </div>
-                        </div>
-                        <div>
-                            <div>Copyright &copy 2019 syoak.com All rights reserved.</div>
-                            <div>
-                                <div>Support</div>
-                                <div>Privacy Police</div>
-                                <div>Terms of Condition</div>
+                            <div class="footer__main-contact">
+                                <span><img src="./images/Path.png"></span>
+                                <span class="footer__main-contact__text">
+                                    <a href="mailto:Hello@syoak.com" class="contact-mail">Hello@syoak.com</a>
+                                </span>
                             </div>
                         </div>
                     </div>
-                </body>
-            </body>
-        </body>
-    </body>
-</html></div></body></html>
+
+                    <div class="footer__main--right">
+                        <div class="footer__main__pad">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#company">Company</a></li>
+                                <li><a href="#how-we-do-it">How we do it</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="footer__main__pad">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#pil-and-gas">Oil & Gas Industry</a></li>
+                                <li><a href="#fuel-management">Fuel Management</a></li>
+                                <li><a href="#chemical-research">Chemical Research</a></li>
+                                <li><a href="#power-and-energy">Power & Energy</a></li>
+                                <li><a href="#eco-and-biopower">Eco & Biopower</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__main__pad">
+                            <h4>Projects</h4>
+                            <ul>
+                                <li>
+                                    <a href="">Factory</a></li>
+                                <li>
+                                    <a href="">Industry</a></li>
+                                <li>
+                                    <a href="">Manufactoring</a></li>
+                                <li>
+                                    <a href="">Mehanical</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__legal__item">
+                    <div class="footer__legal">
+                        <div class="footer__legal--left">
+                            <p>Copyright &copy 2019 syoak.com All rights reserved.</p>
+                        </div>
+                        <div class="footer__legal--right">
+                            <div>Support</div>
+                            <div>Privacy Podivce</div>
+                            <div>Terms of Condition</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="dots.js"></script>
+        <script src="carousel.js"></script>
+        <script src="hamburgerMenu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+@import "../../abstracts/extend";
+.main__section-five {
+    margin: 200px 0 100px;
+}
+
+.main__section-five h3 {
+    padding-bottom: 40px;
+}
+
+.main__section-five h3 {
+    @extend %title-h2;
+    margin-bottom: 0;
+}
+
+.main__section-five__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__section-five__form {
+    flex: 1 0 50%;
+    padding-top: 20px;
+}
+
+.main__section-five__form form {
+    max-width: 450px;
+}
+
+.main__section-five__map {
+    flex: 1 0 50%;
+}
+
+.map__item {
+    max-width: 550px;
+    flex: 1 0 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.map__item div iframe {
+    border-radius: 15px;
+}
+
+.form-contol {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.form-label {
+    font-size: 10px;
+    color: $seventh-color;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    border: none;
+    background-color: $secondary-color;
+    box-shadow: 0 1px $sixth-color;
+}
+
+.form-textarea {
+    box-shadow: none;
+}
+
+.form-checkbox__item {
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox--button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid $seventh-color;
+    border-radius: 5px;
+}
+
+.form-checkbox--text {
+    font-size: 15px;
+    margin-left: 15px;
+    color: $sixth-color;
+}

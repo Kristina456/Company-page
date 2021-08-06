@@ -1,0 +1,44 @@
+@import "../../core/typography";
+
+%font_and_color {
+    color:$sixth-color;
+    font-size: $primary-font-size;
+}
+
+
+.footer__legal__item {
+    box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
+}
+
+.footer__legal {
+    margin: 0px $primary-margin;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__legal--left {
+    flex-grow: 1;
+    margin: $footer-margin;
+}
+
+.footer__legal--right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: $footer-margin;
+    
+}
+
+.footer__legal p {
+    @extend %font_and_color;
+}
+
+.footer__legal--right div {
+    flex: 1;
+    @extend %font_and_color;
+    width: fit-content;
+    display: inline;
+    
+   
+}
+

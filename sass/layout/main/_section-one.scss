@@ -1,0 +1,21 @@
+@import "../../components/buttons";
+@import "../../core/typography";
+.main__section-one {
+    margin: $primary-margin 0px;
+}
+
+.main__section-one__title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section-one {
+    padding: 12px 0;
+}
+
+.main__section-one__main {
+    max-width: 541px;
+    font-size: 20px;
+    line-height: 35px;
+    color: $third-color;
+}
