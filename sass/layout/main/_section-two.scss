@@ -4,7 +4,8 @@
     }
     
     .main__section-two__title {
-        @extend %main-width-h2;
+        max-width: 650px;
+        margin: 100px 0;
     }
     
     .section-two__title--title {

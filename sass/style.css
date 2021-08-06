@@ -124,11 +124,6 @@ table {
   background-color: #e5e5e5;
 }
 
-.main__section-two__title {
-  max-width: 650px;
-  margin: 100px 0;
-}
-
 .section-two__title--title, .slideshow__section__title, .main__section-four__title h3, .main__section-five h3 {
   font-size: 48px;
   color: #00367a;
@@ -402,11 +397,6 @@ table {
   color: #6a6a6a;
 }
 
-.main__section-two__title {
-  max-width: 650px;
-  margin: 100px 0;
-}
-
 .section-two__title--title, .slideshow__section__title, .main__section-four__title h3, .main__section-five h3 {
   font-size: 48px;
   color: #00367a;
@@ -423,6 +413,11 @@ table {
 
 .main__section-two {
   margin: 200px auto;
+}
+
+.main__section-two__title {
+  max-width: 650px;
+  margin: 100px 0;
 }
 
 .section-two__title--main {
@@ -513,11 +508,6 @@ table {
     max-height: 100%;
     max-width: 100%;
   }
-}
-
-.main__section-two__title {
-  max-width: 650px;
-  margin: 100px 0;
 }
 
 .section-two__title--title, .slideshow__section__title, .main__section-four__title h3, .main__section-five h3 {
@@ -656,11 +646,6 @@ table {
   }
 }
 
-.main__section-two__title {
-  max-width: 650px;
-  margin: 100px 0;
-}
-
 .section-two__title--title, .slideshow__section__title, .main__section-four__title h3, .main__section-five h3 {
   font-size: 48px;
   color: #00367a;
@@ -737,11 +722,6 @@ table {
 .card__results__text--text {
   font-size: 16px;
   color: #9da8b6;
-}
-
-.main__section-two__title {
-  max-width: 650px;
-  margin: 100px 0;
 }
 
 .section-two__title--title, .slideshow__section__title, .main__section-four__title h3, .main__section-five h3 {
