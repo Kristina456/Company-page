@@ -509,24 +509,24 @@
                         <div class="main__section-five__form">
                             <form>
                                 <div class="form-contol">
-                                    <label class="form-label" for="name" id="name">Name</label>
-                                    <input class="form-input" type="text">
+                                    <label class="form-label" for="name">Name</label>
+                                    <input class="form-input" type="text" id="name">
                                 </div>
                                 <div class="form-contol">
-                                    <label class="form-label" for="email" id="email">Email adress</label>
-                                    <input class="form-input" type="email">
+                                    <label class="form-label" for="email">Email adress</label>
+                                    <input class="form-input" type="email" id="email">
                                 </div>
                                 <div class="form-contol">
                                     <label class="form-label" for="textarea">Message</label>
                                     <textarea class="form-input form-textarea" name="message" id="textarea" rows="15" cols="10">Write something here...</textarea>
                                 </div>
                                 <div class="form-contol">
-                                    <label class="form-label" for="verification" id="verification">Verification</label>
+                                    <label class="form-label" for="verification">Verification</label>
                                     <div class="form-checkbox__item">
-                                        <input class="form-checkbox--button" type="checkbox" required>
+                                        <input class="form-checkbox--button" id="verification" type="checkbox" required>
                                         <span class="form-checkbox--text">
                                                 I am not a robot
-                                            </span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="main__section-five__button">
@@ -544,7 +544,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- footer -->
             <div class="footer">
@@ -559,11 +558,15 @@
                             </div>
                             <div class="footer__main-contact">
                                 <span><img src="./images/Shape(1).png"></span>
-                                <span class="footer__main-contact__text">1182 Williams Avenue, Sand Francisco</span>
+                                <span class="footer__main-contact__text">
+                                    <address>1182 Williams Avenue, Sand Francisco</address>
+                             </span>
                             </div>
                             <div class="footer__main-contact">
                                 <span><img src="./images/Path.png"></span>
-                                <span class="footer__main-contact__text">Hello@syoak.com</span>
+                                <span class="footer__main-contact__text">
+                                    <a href="mailto:Hello@syoak.com" class="contact-mail">Hello@syoak.com</a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -572,29 +575,33 @@
                         <div class="footer__main__pad">
                             <h4>Company</h4>
                             <ul>
-                                <li>About us</li>
-                                <li>Company</li>
-                                <li>How we do it</li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#company">Company</a></li>
+                                <li><a href="#how-we-do-it">How we do it</a></li>
                             </ul>
 
                         </div>
                         <div class="footer__main__pad">
                             <h4>Services</h4>
                             <ul>
-                                <li>Oil & Gas Industry</li>
-                                <li>Fuel Management</li>
-                                <li>Chemical Research</li>
-                                <li>Power & Energy</li>
-                                <li>Eco & Biopower</li>
+                                <li><a href="#pil&gas">Oil & Gas Industry</a></li>
+                                <li><a href="#fuel-management">Fuel Management</a></li>
+                                <li><a href="#chemical-research">Chemical Research</a></li>
+                                <li><a href="#power&energy">Power & Energy</a></li>
+                                <li><a href="#eco&biopower">Eco & Biopower</a></li>
                             </ul>
                         </div>
                         <div class="footer__main__pad">
                             <h4>Projects</h4>
                             <ul>
-                                <li>Factory</li>
-                                <li>Industry</li>
-                                <li>Manufactoring</li>
-                                <li>Mehanical</li>
+                                <li>
+                                    <a href="">Factory</a></li>
+                                <li>
+                                    <a href="">Industry</a></li>
+                                <li>
+                                    <a href="">Manufactoring</a></li>
+                                <li>
+                                    <a href="">Mehanical</a></li>
                             </ul>
                         </div>
                     </div>
