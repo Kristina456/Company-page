@@ -1057,26 +1057,24 @@ table {
   font-size: 15px;
 }
 
-.section-two__hover__item {
-  max-width: 250px;
-  height: 100px;
-  font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  right: 30%;
-  bottom: 10%;
-}
-
 .section-two__image__item {
   position: relative;
+}
+
+.dots-item {
+  width: 100%;
+}
+
+.section-two__hover__dot-1 {
+  position: absolute;
+  bottom: 200px;
+  left: 30px;
+}
+
+.section-two__hover__dot-2 {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
 }
 
 .hover-dot__item {
@@ -1119,9 +1117,17 @@ table {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  top: 100px;
-  left: 50px;
   padding: 15px 0;
+}
+
+#popover-1 {
+  top: 60px;
+  left: 30px;
+}
+
+#popover-2 {
+  bottom: -10px;
+  left: 20px;
 }
 
 .popover__x {
@@ -1157,18 +1163,43 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.prev,
-.next {
+.one-dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.one-dot__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dart {
   cursor: pointer;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
+  padding: 5px;
+  color: #0052b4;
+  font-weight: bold;
 }
 
 .dot {
@@ -1205,9 +1236,20 @@ table {
 
 .dot__text--inactive {
   display: none;
+  color: #ff7616;
 }
 
 .dot__text--active {
+  display: block;
+  text-align: center;
+  color: #ff7616;
+}
+
+.dot-dart--inactive {
+  display: none;
+}
+
+.dot-dart--active {
   display: block;
 }
 
@@ -1269,5 +1311,14 @@ body {
       -ms-flex-positive: 999;
           flex-grow: 999;
   min-width: 80%;
+}
+
+/* UTILITIES */
+.u-hide {
+  display: none;
+}
+
+.u-show {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
