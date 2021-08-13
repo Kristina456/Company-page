@@ -506,30 +506,33 @@
                     <h3>Get in Touch<br>With Us</h3>
                     <div class="main__section-five__item">
                         <div class="main__section-five__form">
-                            <form>
+                            <form id="get-in-touch-form">
                                 <div class="form-contol">
                                     <label class="form-label" for="name">Name</label>
-                                    <input class="form-input" type="text" id="name">
+                                    <input class="form-input" type="text" id="name" required>
                                 </div>
                                 <div class="form-contol">
                                     <label class="form-label" for="email">Email adress</label>
-                                    <input class="form-input" type="email" id="email">
+                                    <input class="form-input" type="email" id="email" name="email" required>
                                 </div>
                                 <div class="form-contol">
                                     <label class="form-label" for="textarea">Message</label>
-                                    <textarea class="form-input form-textarea" name="message" id="textarea" rows="15" cols="10">Write something here...</textarea>
+                                    <textarea class="form-input form-textarea" name="message" id="textarea" rows="15" cols="10" required placeholder="Write something here..."></textarea>
                                 </div>
                                 <div class="form-contol">
                                     <label class="form-label" for="verification">Verification</label>
                                     <div class="form-checkbox__item">
-                                        <input class="form-checkbox--button" id="verification" type="checkbox" required>
-                                        <span class="form-checkbox--text">
-                                                I am not a robot
-                                        </span>
+                                        <label>
+                                            <input class="form-checkbox--button" id="verification" type="checkbox" required>
+                                            <span class="form-checkbox--text">
+                                                    I am not a robot
+                                            </span>
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="main__section-five__button">
-                                    <button>Send Message</button>
+                                    <button type="submit">Send Message</button>
+                                    <div class="hide" id="message-send">Message Sent Successfully</div>
                                 </div>
                             </form>
                         </div>
@@ -621,6 +624,7 @@
     <script src="dots.js"></script>
     <script src="carousel.js"></script>
     <script src="hamburgerMenu.js"></script>
+    <script src="./getInTouch.js"></script>
 </body>
 
 </html>
