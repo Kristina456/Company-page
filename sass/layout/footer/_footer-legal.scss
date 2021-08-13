@@ -1,10 +1,8 @@
 @import "../../core/typography";
-
 %font_and_color {
-    color:$sixth-color;
+    color: $sixth-color;
     font-size: $primary-font-size;
 }
-
 
 .footer__legal__item {
     box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
@@ -21,12 +19,12 @@
     margin: $footer-margin;
 }
 
-.footer__legal--right {
+.footer__legal--right a {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     margin: $footer-margin;
-    
+    text-decoration: none;
 }
 
 .footer__legal p {
@@ -38,7 +36,4 @@
     @extend %font_and_color;
     width: fit-content;
     display: inline;
-    
-   
 }
-
