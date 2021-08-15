@@ -1,0 +1,43 @@
+/* 
+Typohraphy
+*/
+
+
+/* Import coustom typography from font providers */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+/* 
+Project line height
+*/
+
+$type-xtny:10px;
+$type-tny: 11px;
+$type-xsmall: 13px;
+$type-small:15px;
+$type-base: 16px;
+$type-medium:20px;
+$type-xmedium:25px;
+$type-large:48px;
+$type-xlarge:60px;
+
+/* 
+Type weights
+*/
+
+$type-weight-regular: 400px;
+$type-weight-medium: 500px;
+$type-weight-semibold: 700px;
+$type-weight-bold: 900px;
+
+/* 
+Font
+*/
+
+$font-sans: 'Inter',
+sans-serif,
+"Segoe UI",
+"Roboto";
+$font-serif: Georgia,
+Times,
+serif;

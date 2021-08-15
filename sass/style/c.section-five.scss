@@ -47,7 +47,7 @@
 }
 
 .form-label {
-    font-size: 10px;
+    font-size: $type-xtny;
     color: $blue-1;
     margin-bottom: 4px;
 }
@@ -75,7 +75,7 @@
 }
 
 .form-checkbox--text {
-    font-size: 15px;
+    font-size: $type-small;
     margin-left: 15px;
     color: $gray-2;
 }

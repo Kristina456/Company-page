@@ -20,7 +20,7 @@
 
 .footer__main__paragraf {
     max-width: 320px;
-    font-size: 13px;
+    font-size: $type-xsmall;
 }
 
 .footer__main-title {
@@ -54,8 +54,8 @@
 
 .footer__main__pad {
     h4 {
-        font-weight: bold;
-        font-size: 16px;
+        font-weight: $type-weight-bold;
+        font-size: $type-base;
         margin-bottom: 12px;
     }
     li {
@@ -63,7 +63,7 @@
     }
     a {
         text-decoration: none;
-        font-size: 13px;
+        font-size: $type-xsmall;
         color: $blue-1;
     }
 }

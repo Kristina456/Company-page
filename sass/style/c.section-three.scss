@@ -24,7 +24,7 @@
 
 .slideshow__main__left__text {
     max-width: 450px;
-    font-size: 16px;
+    font-size: $type-base;
     line-height: 24px;
     padding: 16px 0;
     color: $gray-3;
@@ -50,7 +50,7 @@
     max-width: 220px;
     max-height: 45px;
     display: flex;
-    font-size: 11px;
+    font-size: $type-tny;
     line-height: 1.5;
     color: $gray-2;
     background-color: rgba(251, 251, 251, 1);

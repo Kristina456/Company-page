@@ -1,7 +1,7 @@
 %title-h2 {
-    font-size: 48px;
+    font-size: $type-large;
     color: $blue-3;
-    font-weight: 900;
+    font-weight: $type-weight-bold;
     margin: 40px 0;
 }
 
@@ -10,8 +10,8 @@
 }
 
 %title-h3 {
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: $type-weight-bold;
+    font-size: $type-medium;
     color: $blue-3;
     line-height: 28px;
 }
