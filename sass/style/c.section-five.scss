@@ -48,14 +48,14 @@
 
 .form-label {
     font-size: 10px;
-    color: $seventh-color;
+    color: $blue-1;
     margin-bottom: 4px;
 }
 
 .form-input {
     border: none;
-    background-color: $secondary-color;
-    box-shadow: 0 1px $sixth-color;
+    background-color: $body-background;
+    box-shadow: 0 1px $gray-2;
 }
 
 .form-textarea {
@@ -70,12 +70,12 @@
 .form-checkbox--button {
     width: 24px;
     height: 24px;
-    border: 1px solid $seventh-color;
+    border: 1px solid $blue-1;
     border-radius: 5px;
 }
 
 .form-checkbox--text {
     font-size: 15px;
     margin-left: 15px;
-    color: $sixth-color;
+    color: $gray-2;
 }

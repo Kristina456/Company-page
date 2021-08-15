@@ -1,8 +1,8 @@
 @mixin button($width:145px) {
     width: $width;
     height: 45px;
-    background-color: $primary-color;
-    color: $fourth-color;
+    background-color: $blue-2;
+    color: $gray-1;
     border: none;
 }
 
@@ -17,7 +17,7 @@
 .nav-button {
     padding: 5px 20px;
     width: 100px;
-    border-color: $primary-color;
+    border-color: $blue-2;
     border-radius: 5px;
-    background-color: $secondary-color;
+    background-color: $body-background;
 }

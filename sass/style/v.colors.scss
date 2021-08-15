@@ -1,9 +1,36 @@
-$primary-color: rgb(0, 82, 180);
-$secondary-color: rgb(229, 229, 229);
-$third-color: rgba(106, 106, 106, 1);
-$fourth-color: rgb(255, 255, 255);
-$fifth-color: rgba(0, 54, 122, 1);
-$sixth-color: rgb(157, 168, 182);
-$seventh-color:rgb(0, 82, 180);
-$eight-color: rgba(0, 0, 0, 0.07);
+/* 
+  Colors 
+ */
+
+
+/*
+  Shades of blue
+ */
+
+$blue-1:rgb(0, 82, 180);
+$blue-2: rgb(0, 82, 180);
+$blue-3: rgba(0, 54, 122, 1);
+
+/*
+  sheades of gray
+ */
+
+$gray-1: rgb(255, 255, 255);
+$gray-2: rgb(157, 168, 182);
+$gray-3: rgba(106, 106, 106, 1);
+$gray-4: rgba(102, 102, 102, 1);
+$gray-5: rgba(53, 56, 77, 1);
+$gray-6: rgba(0, 0, 0, 0.07);
+$gray-7: rgba(0, 0, 0, 1);
+
+/* 
+  Background color
+ */
+
+$body-background: rgb(229, 229, 229);
+
+/* 
+  Dot color
+ */
+
 $dot-color: rgba(255, 118, 22, 1);
