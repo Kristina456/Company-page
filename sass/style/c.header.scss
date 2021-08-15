@@ -1,7 +1,3 @@
-@import "../../abstracts/mixins";
-@import "../../core/colors";
-@import "../../components/buttons";
-@import "./header-small";
 @mixin header-navigation ($justify-content:flex-start) {
     flex-grow: 1;
     display: flex;
@@ -39,7 +35,7 @@
 }
 
 .header__authentication {
-    @include header-navigation($justify-countent: flex-end);
+    @include header-navigation($justify-content: flex-end);
     ul {
         display: flex;
     }

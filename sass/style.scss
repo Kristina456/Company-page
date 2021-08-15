@@ -5,7 +5,9 @@
 @import "./style/v.responsive.scss";
 @import "./style/v.reset.scss";
 @import "./style/v.colors";
-@import "./style/v.typography";
+@import "./style/v.typography.scss";
+@import "./style/v.global.scss";
+@import "./style/v.shadows.scss";
 
 /* 
 *  Base stylings for setting the body, typography and other base styles
@@ -13,7 +15,6 @@
 
 @import "./style/b.main";
 @import "./style/b.sidebar";
-@import "./style/b.typography.scss";
 
 /* 
 * Tools mixins and extand
@@ -26,6 +27,7 @@
 * Components 
  */
 
+@import "./style/c.hero.scss";
 @import "./style/c.progress-dots";
 @import "./style/c.carousel";
 @import "./style/c.popover-section";
@@ -39,4 +41,3 @@
 @import "./style/c.section-four";
 @import "./style/c.section-two";
 @import "./style/c.section-three";
-@import "./style/c.section-one";

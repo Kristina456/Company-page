@@ -2,5 +2,11 @@
     Responsive
 */
 
-@custom-media --screen-to-sml (max-width:900px);
-@custom-media --screen-to-xsmall (max-width:999px);
+@media --screen-to-sml and (max-width:900px) {
+    /* small */
+}
+
+;
+@media --screen-to-xsmall and (max-width:999px) {
+    /* small */
+}

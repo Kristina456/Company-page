@@ -1,17 +1,17 @@
-.main__section-one {
+.hero__wrapper {
     margin: $primary-margin 0px;
 }
 
-.main__section-one__title {
+.hero__title {
     font-size: $type-xlarge;
     font-weight: $type-weight-bold;
 }
 
-.section-one {
+.hero {
     padding: 12px 0;
 }
 
-.main__section-one__main {
+.hero__description {
     max-width: 541px;
     font-size: $type-medium;
     line-height: 35px;
