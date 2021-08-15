@@ -55,7 +55,7 @@
 .form-input {
     border: none;
     background-color: $body-background;
-    box-shadow: 0 1px $gray-2;
+    box-shadow: $shadow-form;
 }
 
 .form-textarea {
