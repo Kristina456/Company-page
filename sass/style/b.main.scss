@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: $primary-font;
+    background-color: $secondary-color;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+.main-wrapper {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 80%;
+}
+
+
+/* UTILITIES */
+
+.u-hide {
+    display: none;
+}
+
+.u-show {
+    display: block;
+}
+
+.main {
+    margin: 0 $primary-margin;
+}

@@ -1,53 +1,42 @@
-@import "./core/_reset.scss";
-@import "./core/colors";
-@import "./core/typography";
-@import "./abstracts/mixins";
-@import "./components/buttons";
-@import "./layout/sidebar/sidebar";
-@import "./layout/header/header";
-@import "./layout/main/main";
-@import "./layout/footer/footer";
-@import "./components/progress-dots";
-@import "./components/popover-section";
-@import "./components/carousel";
-* {
-    box-sizing: border-box;
-}
+/* 
+* Variables to use across the project
+*/
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    font-family: $primary-font;
-    background-color: $secondary-color;
-}
+@import "./style/v.responsive.scss";
+@import "./style/v.reset.scss";
+@import "./style/v.colors";
+@import "./style/v.typography";
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1440px;
-    margin: 0 auto;
-}
+/* 
+*  Base stylings for setting the body, typography and other base styles
+ */
 
-.sidebar {
-    flex-basis: 200px;
-    flex-grow: 2;
-}
+@import "./style/b.main";
+@import "./style/b.sidebar";
+@import "./style/b.typography.scss";
 
-.main-wrapper {
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: 80%;
-}
+/* 
+* Tools mixins and extand
+*/
 
+@import "./style/t.mixins";
+@import "./style/t.extend.scss";
 
-/* UTILITIES */
+/* 
+* Components 
+ */
 
-.u-hide {
-    display: none;
-}
-
-.u-show {
-    display: block;
-}
+@import "./style/c.progress-dots";
+@import "./style/c.carousel";
+@import "./style/c.popover-section";
+@import "./style/c.buttons";
+@import "./style/c.footer-legal";
+@import "./style/c.footer";
+@import "./style/c.footer-main";
+@import "./style/c.header-small.scss";
+@import "./style/c.header";
+@import "./style/c.section-five";
+@import "./style/c.section-four";
+@import "./style/c.section-two";
+@import "./style/c.section-three";
+@import "./style/c.section-one";

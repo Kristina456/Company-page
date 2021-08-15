@@ -1,5 +1,3 @@
-@import "../../abstracts/extend";
-@import "../../core/colors";
 .slideshow__section__title {
     @extend %title-h2;
     min-height: 120px;

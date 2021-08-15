@@ -2,10 +2,10 @@
 @import "../../core/colors";
 @import "../../components/buttons";
 @import "./header-small";
-@mixin header-navigation ($justify-countent:flex-start) {
+@mixin header-navigation ($justify-content:flex-start) {
     flex-grow: 1;
     display: flex;
-    justify-content: $justify-countent;
+    justify-content: $justify-content;
     align-items: center;
 }
 
