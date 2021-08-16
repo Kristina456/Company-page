@@ -10,7 +10,7 @@
     height: $header-high;
 }
 
-.header__big-screen-nav {
+.navbar {
     margin-left: $primary-margin;
     width: 100%;
     display: flex;
@@ -18,20 +18,23 @@
     flex-wrap: wrap;
 }
 
-.header__nav {
+.nav-menu {
     @include header-navigation;
-    ul {
-        display: flex;
-    }
-    li {
-        padding-right: 35px;
-    }
-    a {
-        text-decoration: none;
-        font-weight: $type-weight-bold;
-        font-size: $type-xsmall;
-        color: $gray-7;
-    }
+}
+
+ul {
+    display: flex;
+}
+
+.nav-item {
+    padding-right: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: $type-weight-bold;
+    font-size: $type-xsmall;
+    color: $gray-7;
 }
 
 .header__authentication {

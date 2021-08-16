@@ -620,7 +620,7 @@ body {
   height: 50px;
 }
 
-.header__big-screen-nav {
+.navbar {
   margin-left: 70px;
   width: 100%;
   display: flex;
@@ -628,19 +628,22 @@ body {
   flex-wrap: wrap;
 }
 
-.header__nav {
+.nav-menu {
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.header__nav ul {
+
+ul {
   display: flex;
 }
-.header__nav li {
+
+.nav-item {
   padding-right: 35px;
 }
-.header__nav a {
+
+.nav-link {
   text-decoration: none;
   font-weight: 900;
   font-size: 13px;
