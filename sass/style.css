@@ -127,20 +127,67 @@ body {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
+}
+@media screen and (max-width: 990px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .sidebar {
-  flex-basis: 200px;
-  flex-grow: 2;
+  width: 200px;
+  position: fixed;
+}
+@media screen and (max-width: 990px) {
+  .sidebar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #e5e5e5;
+  }
 }
 
 .main-wrapper {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: 80%;
+  position: relative;
+  left: 200px;
+  width: calc(100% - 200px);
+  border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #e5e5e5;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 990px) {
+  .header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .main-wrapper {
+    position: relative;
+    top: calc(100px + 100px);
+    left: 0;
+    width: 100%;
+  }
 }
 
 /* UTILITIES */
@@ -615,17 +662,18 @@ body {
   padding-right: 20px;
 }
 
-.header {
-  display: flex;
-  height: 50px;
-}
-
 .header__item {
   margin-left: 70px;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: static;
+}
+@media screen and (max-width: 900px) {
+  .header__item {
+    margin-left: 0px;
+  }
 }
 
 .navbar {
@@ -633,10 +681,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-ul {
-  display: flex;
 }
 
 .nav-item {
@@ -699,8 +743,8 @@ ul {
 @media screen and (max-width: 900px) {
   .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 90px;
+    left: -200%;
+    top: 100px;
     flex-direction: column;
     background-color: #fff;
     width: fit-content;
@@ -711,18 +755,22 @@ ul {
   }
 
   .nav-menu.active {
-    left: 70px;
+    left: 0px;
     position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 40%;
   }
 
   .nav-item {
-    width: 100%;
-    padding: 30px;
+    padding: 20px;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+    padding: 10px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -740,6 +788,15 @@ ul {
   .hamburger__item {
     display: flex;
     align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-link-right {
+    display: none;
+  }
+
+  .nav-item-right {
+    padding-right: 0px !important;
   }
 }
 .main__section-five {

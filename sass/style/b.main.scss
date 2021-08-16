@@ -13,20 +13,61 @@ body {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
+    @media screen and (max-width: 990px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .sidebar {
-    flex-basis: 200px;
-    flex-grow: 2;
+    width: 200px;
+    position: fixed;
+    @media screen and (max-width: 990px) {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $body-background;
+    }
 }
 
 .main-wrapper {
-    flex-basis: 0;
-    flex-grow: 999;
-    min-width: 80%;
+    position: relative;
+    left: $sidebar-width;
+    width: calc(100% - 200px);
+    border-left: 1px solid $gray-6;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: $header-hight;
+    background-color: $body-background;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    @media screen and (max-width: 990px) {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.main-wrapper {
+    @media screen and (max-width: 990px) {
+        position: relative;
+        top: calc(100px + 100px);
+        left: 0;
+        width: 100%;
+    }
 }
 
 
