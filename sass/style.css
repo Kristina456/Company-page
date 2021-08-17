@@ -711,6 +711,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 990px) {
+  .navbar--right .navigation-item {
+    padding-right: 10px;
+  }
+}
 .navbar--right .navigation-link {
   text-decoration: none;
   font-size: 13px;
@@ -1091,14 +1096,17 @@ body {
     display: flex;
     align-items: center;
   }
-}
-@media screen and (max-width: 900px) {
+
   .nav-link-right {
     display: none;
   }
 
   .nav-item-right {
     padding-right: 0px !important;
+  }
+
+  .navigation-text {
+    display: none;
   }
 }
 

@@ -72,14 +72,14 @@
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-@media screen and (max-width: 900px) {
   .nav-link-right {
     display: none;
   }
   .nav-item-right {
     padding-right: 0px !important;
+  }
+  .navigation-text {
+    display: none;
   }
 }
 /*# sourceMappingURL=c.hamburger.css.map */

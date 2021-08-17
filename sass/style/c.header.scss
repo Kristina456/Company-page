@@ -45,6 +45,9 @@
             font-size: $type-xsmall;
             display: flex;
             align-items: center;
+            @media screen and (max-width: 990px) {
+                padding-right: 10px;
+            }
         }
         .navigation-link {
             text-decoration: none;
