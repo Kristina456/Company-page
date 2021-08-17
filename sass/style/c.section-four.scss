@@ -7,7 +7,10 @@
 }
 
 .main__section-four__title h3 {
-    @extend %title-h2
+    @extend %title-h2;
+    @media screen and (max-width: 900px) {
+        font-size: $type-xmedium;
+    }
 }
 
 .main__section-four__title p {

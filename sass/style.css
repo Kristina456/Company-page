@@ -816,6 +816,12 @@ body {
   margin: 50px 0;
 }
 
+@media screen and (max-width: 900px) {
+  .main__section-four__title h3 {
+    font-size: 25px;
+  }
+}
+
 .main__section-four__title p {
   font-size: 16px;
   color: #6a6a6a;
