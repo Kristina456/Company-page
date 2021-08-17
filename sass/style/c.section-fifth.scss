@@ -1,0 +1,14 @@
+    .section-fifth {
+        margin: 200px 0 100px;
+    }
+    
+    .section-fifth__title {
+        padding-bottom: 40px;
+        @extend %title-h2;
+        margin-bottom: 0;
+    }
+    
+    .section-fifth__main {
+        display: flex;
+        flex-wrap: wrap;
+    }
