@@ -6,61 +6,51 @@
     margin: 0 $primary-margin;
 }
 
-.footer__main--left {
+.footer--left {
     flex-grow: 1;
     margin-bottom: 30px;
+    &__section {
+        max-width: 320px;
+        font-size: $type-xsmall;
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+    &__contact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    &__text {
+        margin-left: 10px;
+    }
+    &__mail {
+        text-decoration: none;
+        color: $gray-7;
+    }
+    &__p {
+        margin-top: 20px;
+    }
 }
 
-.footer__main--right {
+.footer--right {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-.footer__main__paragraf {
-    max-width: 320px;
-    font-size: $type-xsmall;
-}
-
-.footer__main-title {
-    margin-bottom: 25px;
-}
-
-.footer__main-title img {
-    margin-bottom: 20px;
-}
-
-.footer__main-contact {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.footer__main-contact__text {
-    margin-left: 10px;
-}
-
-.contact-mail {
-    text-decoration: none;
-    color: $gray-7;
-}
-
-.footer__main__pad {
-    flex: 1;
-    padding-right: 10px;
-}
-
-.footer__main__pad {
-    h4 {
+    &__pad {
+        flex: 1;
+        padding-right: 10px;
+    }
+    &__title {
         font-weight: $type-weight-bold;
         font-size: $type-base;
         margin-bottom: 12px;
     }
-    li {
+    &__item {
         margin-top: 8px;
     }
-    a {
+    &__link {
         text-decoration: none;
         font-size: $type-xsmall;
         color: $blue-1;

@@ -66,9 +66,7 @@ function activeSlide(dot, section) {
         dotText.classList.add("dot__text--active");
     }
 
-    if (!section.classList.contains("u-show")) {
-        section.classList.add("u-show");
-    }
+    section.style.display = "block";
 }
 
 function inactiveSlide(dot, section) {
@@ -104,9 +102,7 @@ function inactiveSlide(dot, section) {
         dotText.classList.add("dot__text--inactive");
     }
 
-    if (section.classList.contains("u-show")) {
-        section.classList.remove("u-show");
-    }
+    section.style.display = "none";
 }
 
 currentSlide(0);
