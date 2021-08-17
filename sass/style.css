@@ -892,12 +892,14 @@ body {
   display: flex;
   flex-direction: row;
   margin: 200px 0;
-  margin-right: 200px;
 }
 
 .section-two__text {
   flex: 1 0 50%;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-two__text__item {
@@ -908,17 +910,14 @@ body {
   flex: 1 0 50%;
   flex-wrap: wrap;
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .section-two__image__item {
   max-width: 300px;
   max-height: 250px;
   position: relative;
-}
-
-.image--right {
-  display: flex;
-  justify-content: end;
 }
 
 .section-two__text__item p {
