@@ -36,6 +36,10 @@ body {
     }
 }
 
+.main {
+    margin: 0 $primary-margin;
+}
+
 .main-wrapper {
     position: relative;
     left: $sidebar-width;
@@ -72,19 +76,4 @@ body {
 
 .footer {
     box-shadow: $shadow-line2;
-}
-
-
-/* UTILITIES */
-
-.u-hide {
-    display: none;
-}
-
-.u-show {
-    display: block;
-}
-
-.main {
-    margin: 0 $primary-margin;
 }

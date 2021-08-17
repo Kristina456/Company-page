@@ -1,0 +1,15 @@
+/* 
+    Responsive
+*/
+@media --screen-to-sml and (max-width: 900px) {
+  /* small */
+}
+
+@media --screen-to-xsmall and (max-width: 999px) {
+  /* small */
+}
+
+@media --screen-to-small and (max-width: 770px) {
+  /* smal screen footer modifications */
+}
+/*# sourceMappingURL=v.responsive.css.map */

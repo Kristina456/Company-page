@@ -11,6 +11,9 @@
 @media --screen-to-xsmall and (max-width: 999px) {
   /* small */
 }
+@media --screen-to-small and (max-width: 770px) {
+  /* smal screen footer modifications */
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -154,6 +157,10 @@ body {
   }
 }
 
+.main {
+  margin: 0 70px;
+}
+
 .main-wrapper {
   position: relative;
   left: 200px;
@@ -192,19 +199,6 @@ body {
 
 .footer {
   box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
-}
-
-/* UTILITIES */
-.u-hide {
-  display: none;
-}
-
-.u-show {
-  display: block;
-}
-
-.main {
-  margin: 0 70px;
 }
 
 .sidebar {
@@ -331,6 +325,14 @@ body {
   display: none;
 }
 
+.u-hide {
+  display: none;
+}
+
+.u-show {
+  display: block;
+}
+
 .section-two__image__item {
   position: relative;
 }
@@ -428,38 +430,50 @@ body {
   background-color: #e5e5e5;
 }
 
-.footer__legal--right div, .footer__legal p {
+.footer__legal {
+  box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
+}
+
+.legal {
+  margin: 0px 70px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 770px) {
+  .legal {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.legal--left {
+  flex: 1;
+  margin: 16px 0;
+}
+.legal--left__paragraph {
   color: #9da8b6;
   font-size: 13px;
 }
 
-.footer__legal__item {
-  box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
-}
-
-.footer__legal {
-  margin: 0px 70px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer__legal--left {
-  flex-grow: 1;
-  margin: 16px 0;
-}
-
-.footer__legal--right a {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  margin: 16px 0;
-  text-decoration: none;
-}
-
-.footer__legal--right div {
+.legal--right {
   flex: 1;
+}
+.legal--right__menu {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.legal--right__item {
   width: fit-content;
-  display: inline;
+  word-wrap: unset;
+  margin: 16px 0;
+  padding-right: 10px;
+}
+.legal--right__link {
+  text-decoration: none;
+  color: #9da8b6;
+  font-size: 13px;
 }
 
 .footer__main {
