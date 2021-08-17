@@ -8,7 +8,7 @@ const lastSlideIndex = slides.length - 1;
 function nextSlide() {
     if (currentSlideIndex === lastSlideIndex) {
         currentSlideIndex = 0;
-        currentSlide(currentSlideIndex)
+        currentSlide(currentSlideIndex);
     } else {
         currentSlideIndex += 1;
         currentSlide(currentSlideIndex)
