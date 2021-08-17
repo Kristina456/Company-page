@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width:900px) {
-    .nav-menu {
+    .navbar--left__menu {
         position: fixed;
         left: -200%;
         top: 100px;
@@ -25,7 +25,7 @@
         transition: 0.8s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-    .nav-menu.active {
+    .navbar--left__menu.active {
         left: 0px;
         position: fixed;
         display: flex;
@@ -33,7 +33,7 @@
         width: 30%;
         height: 40%;
     }
-    .nav-item {
+    .navbar--left__item {
         padding: 20px;
     }
     .hamburger {
