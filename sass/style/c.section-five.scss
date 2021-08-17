@@ -1,81 +1,70 @@
-.main__section-five {
-    margin: 200px 0 100px;
-}
-
-.main__section-five h3 {
-    padding-bottom: 40px;
-}
-
-.main__section-five h3 {
-    @extend %title-h2;
-    margin-bottom: 0;
-}
-
-.main__section-five__item {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main__section-five__form {
-    flex: 1 0 50%;
-    padding-top: 20px;
-}
-
-.main__section-five__form form {
-    max-width: 450px;
-}
-
-.main__section-five__map {
-    flex: 1 0 50%;
-}
-
-.map__item {
-    max-width: 550px;
-    flex: 1 0 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.map__item div iframe {
-    border-radius: 15px;
-}
-
-.form-contol {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-}
-
-.form-label {
-    font-size: $type-xtny;
-    color: $blue-1;
-    margin-bottom: 4px;
-}
-
-.form-input {
-    border: none;
-    background-color: $body-background;
-    box-shadow: $shadow-form;
-}
-
-.form-textarea {
-    box-shadow: none;
-}
-
-.form-checkbox__item {
-    display: flex;
-    align-items: center;
-}
-
-.form-checkbox--button {
-    width: 24px;
-    height: 24px;
-    border: 1px solid $blue-1;
-    border-radius: 5px;
-}
-
-.form-checkbox--text {
-    font-size: $type-small;
-    margin-left: 15px;
-    color: $gray-2;
-}
+    .section-fifth {
+        margin: 200px 0 100px;
+    }
+    
+    .section-fifth__title {
+        padding-bottom: 40px;
+        @extend %title-h2;
+        margin-bottom: 0;
+    }
+    
+    .section-fifth__main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .form__item {
+        flex: 1 0 50%;
+        padding-top: 20px;
+    }
+    
+    .form {
+        max-width: 450px;
+        &__control {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+        &__label {
+            font-size: $type-xtny;
+            color: $blue-1;
+            margin-bottom: 4px;
+        }
+        &__input {
+            border: none;
+            background-color: $body-background;
+            box-shadow: $shadow-form;
+        }
+        &__textarea {
+            box-shadow: none;
+        }
+    }
+    
+    .checkbox {
+        &__button {
+            width: 24px;
+            height: 24px;
+            border: 1px solid $blue-1;
+            border-radius: 5px;
+        }
+        &__text {
+            font-size: $type-small;
+            margin-left: 15px;
+            color: $gray-2;
+        }
+    }
+    
+    .main__section-five__map {
+        flex: 1 0 50%;
+    }
+    
+    .map__item {
+        max-width: 550px;
+        flex: 1 0 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .map__item div iframe {
+        border-radius: 15px;
+    }

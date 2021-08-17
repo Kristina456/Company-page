@@ -1,5 +1,5 @@
-const form = document.querySelector("#get-in-touch-form");
-const divMessageSent = document.querySelector("#message-send")
+const form = document.querySelector("#js-form");
+const divMessageSent = document.querySelector("#js-send-message")
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();

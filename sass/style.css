@@ -220,7 +220,7 @@ body {
 /* 
 * Tools mixins and extand
 */
-.slideshow__section__title, .section-two__title--title, .main__section-four__title h3, .main__section-five h3 {
+.slideshow__section__title, .section-two__title--title, .main__section-four__title h3, .section-fifth__title {
   font-size: 48px;
   color: #00367a;
   font-weight: 900;
@@ -653,30 +653,57 @@ body {
   margin-right: 10px;
 }
 
-.main__section-five {
+.section-fifth {
   margin: 200px 0 100px;
 }
 
-.main__section-five h3 {
+.section-fifth__title {
   padding-bottom: 40px;
-}
-
-.main__section-five h3 {
   margin-bottom: 0;
 }
 
-.main__section-five__item {
+.section-fifth__main {
   display: flex;
   flex-wrap: wrap;
 }
 
-.main__section-five__form {
+.form__item {
   flex: 1 0 50%;
   padding-top: 20px;
 }
 
-.main__section-five__form form {
+.form {
   max-width: 450px;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.form__label {
+  font-size: 10px;
+  color: #0052b4;
+  margin-bottom: 4px;
+}
+.form__input {
+  border: none;
+  background-color: #e5e5e5;
+  box-shadow: 0 1px #9da8b6;
+}
+.form__textarea {
+  box-shadow: none;
+}
+
+.checkbox__button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #0052b4;
+  border-radius: 5px;
+}
+.checkbox__text {
+  font-size: 15px;
+  margin-left: 15px;
+  color: #9da8b6;
 }
 
 .main__section-five__map {
@@ -692,46 +719,6 @@ body {
 
 .map__item div iframe {
   border-radius: 15px;
-}
-
-.form-contol {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
-}
-
-.form-label {
-  font-size: 10px;
-  color: #0052b4;
-  margin-bottom: 4px;
-}
-
-.form-input {
-  border: none;
-  background-color: #e5e5e5;
-  box-shadow: 0 1px #9da8b6;
-}
-
-.form-textarea {
-  box-shadow: none;
-}
-
-.form-checkbox__item {
-  display: flex;
-  align-items: center;
-}
-
-.form-checkbox--button {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #0052b4;
-  border-radius: 5px;
-}
-
-.form-checkbox--text {
-  font-size: 15px;
-  margin-left: 15px;
-  color: #9da8b6;
 }
 
 .main-section-four {
