@@ -285,7 +285,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.progres-dot__item__first {
+
+.progres-dot__item--first {
   width: 35px;
   height: 35px;
   border: 1px solid #ff7616;
@@ -307,7 +308,6 @@ body {
   height: 25px;
   color: #ff7616;
 }
-
 .progress-dot__text {
   position: absolute;
   top: 40px;
