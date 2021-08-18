@@ -220,7 +220,7 @@ body {
 /* 
 * Tools mixins and extand
 */
-.title__h2, .text__title, .section-fifth__title, .slide__title {
+.form-section__title, .title__h2, .text__title, .slide__title {
   font-size: 48px;
   color: #00367a;
   font-weight: 900;
@@ -734,20 +734,6 @@ body {
   margin-right: 10px;
 }
 
-.section-fifth {
-  margin: 200px 0 100px;
-}
-
-.section-fifth__title {
-  padding-bottom: 40px;
-  margin-bottom: 0;
-}
-
-.section-fifth__main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .oil-cards {
   margin: 200px 0;
 }
@@ -1020,6 +1006,18 @@ body {
 
 .map__item div iframe {
   border-radius: 15px;
+}
+
+.form-section {
+  margin: 200px 0 100px;
+}
+.form-section__title {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+.form-section__main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__item {
