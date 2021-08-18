@@ -1,21 +1,14 @@
-.section-two__image__item {
-    position: relative;
-}
-
-.dots-item {
-    width: 100%;
-}
-
-.section-two__hover__dot-1 {
-    position: absolute;
-    bottom: 200px;
-    left: 30px;
-}
-
-.section-two__hover__dot-2 {
-    position: absolute;
-    bottom: 100px;
-    left: 150px;
+.popover {
+    &--1 {
+        position: absolute;
+        bottom: 200px;
+        left: 30px;
+    }
+    &--2 {
+        position: absolute;
+        bottom: 100px;
+        left: 150px;
+    }
 }
 
 .hover-dot__item {
@@ -37,7 +30,7 @@
     border-radius: 50px;
 }
 
-.popover {
+.popover__text__item {
     background-color: #FFFFFF;
     box-shadow: $shadow-popover;
     border-radius: 5px;
@@ -46,6 +39,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 15px 0;
+}
+
+.popover__text {
+    flex: 0 0 80%;
+    font-size: $type-xsmall;
+    line-height: 1.75;
+    color: $gray-2;
+    padding-right: 5px;
 }
 
 #popover-1 {
@@ -63,12 +64,4 @@
     flex: 0 0 20%;
     text-align: center;
     padding-top: 5px;
-}
-
-.popover__text {
-    flex: 0 0 80%;
-    font-size: $type-xsmall;
-    line-height: 1.75;
-    color: $gray-2;
-    padding-right: 5px;
 }
