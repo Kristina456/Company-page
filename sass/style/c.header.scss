@@ -19,6 +19,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 100%;
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -40,14 +41,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
     &__menu {
         display: flex;
+        align-items: center;
     }
     &__item {
         padding-right: 35px;
         font-size: $type-xsmall;
         display: flex;
-        align-items: center;
+        height: 100%;
         @media screen and (max-width: 990px) {
             padding-right: 10px;
         }

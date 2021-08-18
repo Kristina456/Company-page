@@ -5,5 +5,5 @@ form.addEventListener("submit", function(e) {
     e.preventDefault();
     console.log('Message sent successfully')
     form.reset();
-    divMessageSent.classList.remove('hide');
+    divMessageSent.classList.remove('js-hide');
 })

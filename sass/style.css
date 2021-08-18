@@ -315,7 +315,7 @@ body {
   margin: auto;
 }
 
-.js-slide {
+.slide {
   display: none;
 }
 
@@ -491,24 +491,74 @@ body {
   padding-top: 5px;
 }
 
+.btn--nav {
+  padding: 5px 20px;
+  width: 100px;
+  border-color: #0052b4;
+  background-color: white;
+}
 .btn--primary {
   background-color: #0052b4;
   color: white;
   height: 100%;
   width: 145px;
-}
-.btn--nav {
-  padding: 5px 20px;
-  width: 100px;
-  border-color: #0052b4;
-  border-radius: 5px;
-  background-color: white;
+  border: none;
 }
 .btn--secondary {
   width: 225px;
   height: 100%;
   background-color: #0052b4;
   color: white;
+  border: none;
+}
+
+.btn--nav:hover {
+  background-color: #f5efef;
+  cursor: pointer;
+}
+
+.button,
+.btn--nav {
+  position: relative;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+.button:hover,
+.btn--nav:hover {
+  background: #fff;
+  border: none;
+  color: #00367a;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #0052b4;
+  transition: 400ms ease all;
+}
+
+.button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.button:active {
+  transform: translateY(2px);
 }
 
 .footer__legal {
@@ -638,6 +688,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
 }
 .navbar--left__menu {
   display: flex;
@@ -659,15 +710,17 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 100%;
 }
 .navbar--right__menu {
   display: flex;
+  align-items: center;
 }
 .navbar--right__item {
   padding-right: 35px;
   font-size: 13px;
   display: flex;
-  align-items: center;
+  height: 100%;
 }
 @media screen and (max-width: 990px) {
   .navbar--right__item {
@@ -918,8 +971,8 @@ body {
 
 .dart {
   cursor: pointer;
-  transition: 0.6s ease;
   padding: 5px;
+  transition: 1s ease;
   color: #0052b4;
   font-weight: 900;
 }
@@ -1042,6 +1095,10 @@ body {
   font-size: 15px;
   margin-left: 15px;
   color: #9da8b6;
+}
+
+.js-hide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
