@@ -1,0 +1,19 @@
+.hero {
+    margin: 24px 0;
+    &__wrapper {
+        margin: $primary-margin 0px;
+    }
+    &__title {
+        font-size: $type-xlarge;
+        font-weight: $type-weight-bold;
+    }
+    &__description {
+        max-width: 541px;
+        font-size: $type-medium;
+        line-height: 35px;
+        color: $gray-3;
+    }
+    &__btn {
+        height: 45px;
+    }
+}

@@ -1,11 +1,10 @@
-@import "../../abstracts/mixins";
 .sidebar {
     min-width: $sidebar-width;
-    box-shadow: 1px 0 $eight-color;
+    box-shadow: $shadow-line1;
 }
 
 .sidebar__logo {
-    height: $header-high;
+    height: $header-hight;
     display: flex;
     justify-content: center;
     align-items: center;

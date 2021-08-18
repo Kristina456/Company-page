@@ -1,0 +1,63 @@
+.oil-cards {
+    margin: 200px 0;
+    &__text {
+        margin: 50px 0;
+    }
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.text {
+    &__title {
+        font-size: $type-large;
+        color: $blue-3;
+        font-weight: $type-weight-bold;
+        margin: 40px 0;
+        @media screen and (max-width: 900px) {
+            font-size: $type-xmedium;
+        }
+    }
+    &__paragraph {
+        font-size: $type-base;
+        color: $gray-3;
+        line-height: 24px;
+        max-width: 650px;
+    }
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 232px;
+    min-width: 150px;
+    min-height: 135px;
+    margin: 12px 12px 12px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: $shadow-card-results;
+    border-radius: 5px;
+    &__img {
+        position: absolute;
+        top: -20px;
+        left: 24px;
+    }
+    &__text {
+        margin-top: 44px;
+        margin-left: 24px;
+    }
+}
+
+.card__text {
+    &--number {
+        font-size: $type-xmedium;
+        color: $blue-2;
+        font-weight: $type-weight-bold;
+        line-height: 30px;
+    }
+    &--text {
+        font-size: $type-base;
+        color: $gray-2;
+    }
+}
