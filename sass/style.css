@@ -96,7 +96,9 @@ Type weights
 /* 
 Font
 */
-/* margin left */
+/* Primary margin in project*/
+/* Sidebar width: important for the main element */
+/* header height: important for the logo height */
 /* 
 Shadows
 */
@@ -220,20 +222,6 @@ body {
 /* 
 * Tools mixins and extand
 */
-.form-section__title, .title__h2, .text__title, .slide__title {
-  font-size: 48px;
-  color: #00367a;
-  font-weight: 900;
-  margin: 40px 0;
-}
-
-.solution__text__title, .slide__text__title {
-  font-weight: 900;
-  font-size: 20px;
-  color: #00367a;
-  line-height: 28px;
-}
-
 /* 
 * Components 
  */
@@ -334,6 +322,10 @@ body {
 }
 
 .slide__title {
+  font-size: 48px;
+  color: #00367a;
+  font-weight: 900;
+  margin: 40px 0;
   min-height: 120px;
 }
 .slide__main {
@@ -356,6 +348,10 @@ body {
 }
 
 .slide__text__title {
+  font-weight: 900;
+  font-size: 20px;
+  color: #00367a;
+  line-height: 28px;
   max-width: 430px;
 }
 .slide__text__paragraph {
@@ -511,6 +507,7 @@ body {
 
 .footer__legal {
   box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
+  padding: 16px;
 }
 
 .legal {
@@ -528,7 +525,6 @@ body {
 
 .legal--left {
   flex: 1;
-  margin: 16px 0;
 }
 .legal--left__paragraph {
   color: #9da8b6;
@@ -546,7 +542,6 @@ body {
 .legal--right__item {
   width: fit-content;
   word-wrap: unset;
-  margin: 16px 0;
   padding-right: 10px;
 }
 .legal--right__link {
@@ -743,6 +738,12 @@ body {
   flex-wrap: wrap;
 }
 
+.text__title {
+  font-size: 48px;
+  color: #00367a;
+  font-weight: 900;
+  margin: 40px 0;
+}
 @media screen and (max-width: 900px) {
   .text__title {
     font-size: 25px;
@@ -797,6 +798,12 @@ body {
   margin: 100px 0;
 }
 
+.title__h2 {
+  font-size: 48px;
+  color: #00367a;
+  font-weight: 900;
+  margin: 40px 0;
+}
 .title__main {
   font-size: 20px;
   line-height: 28px;
@@ -826,6 +833,12 @@ body {
 
 .solution__text {
   max-width: 430px;
+}
+.solution__text__title {
+  font-weight: 900;
+  font-size: 20px;
+  color: #00367a;
+  line-height: 28px;
 }
 .solution__text__paragraph {
   margin: 16px 0;
@@ -1011,6 +1024,10 @@ body {
 }
 .form-section__title {
   padding-bottom: 40px;
+  font-size: 48px;
+  color: #00367a;
+  font-weight: 900;
+  margin: 40px 0;
   margin-bottom: 0;
 }
 .form-section__main {

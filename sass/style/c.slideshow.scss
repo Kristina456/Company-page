@@ -18,7 +18,10 @@
 
 .slide {
     &__title {
-        @extend %title-h2;
+        font-size: $type-large;
+        color: $blue-3;
+        font-weight: $type-weight-bold;
+        margin: 40px 0;
         min-height: 120px;
     }
     &__main {
@@ -41,7 +44,10 @@
 
 .slide__text {
     &__title {
-        @extend %title-h3;
+        font-weight: $type-weight-bold;
+        font-size: $type-medium;
+        color: $blue-3;
+        line-height: 28px;
         max-width: 430px;
     }
     &__paragraph {

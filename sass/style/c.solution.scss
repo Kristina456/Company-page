@@ -9,7 +9,10 @@
     
     .title {
         &__h2 {
-            @extend %title-h2;
+            font-size: $type-large;
+            color: $blue-3;
+            font-weight: $type-weight-bold;
+            margin: 40px 0;
         }
         &__main {
             font-size: $type-medium;
@@ -40,7 +43,10 @@
     .solution__text {
         max-width: 430px;
         &__title {
-            @extend %title-h3;
+            font-weight: $type-weight-bold;
+            font-size: $type-medium;
+            color: $blue-3;
+            line-height: 28px;
         }
         &__paragraph {
             margin: 16px 0;

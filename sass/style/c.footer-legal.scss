@@ -1,5 +1,6 @@
 .footer__legal {
     box-shadow: $shadow-line2;
+    padding: 16px;
 }
 
 .legal {
@@ -15,7 +16,6 @@
 
 .legal--left {
     flex: 1;
-    margin: $footer-margin;
     &__paragraph {
         color: $gray-2;
         font-size: $type-xsmall;
@@ -32,7 +32,6 @@
     &__item {
         width: fit-content;
         word-wrap: unset;
-        margin: $footer-margin;
         padding-right: 10px;
     }
     &__link {
