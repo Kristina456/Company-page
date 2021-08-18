@@ -124,7 +124,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Inter", sans-serif, "Segoe UI", "Roboto";
-  background-color: #e5e5e5;
+  background-color: white;
 }
 
 .wrapper {
@@ -153,7 +153,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 1;
-    background-color: #e5e5e5;
+    background-color: white;
   }
 }
 
@@ -173,7 +173,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  background-color: #e5e5e5;
+  background-color: white;
   width: 100%;
   position: sticky;
   top: 0;
@@ -247,7 +247,7 @@ body {
 }
 
 .hero {
-  padding: 12px 0;
+  margin: 24px 0;
 }
 
 .hero__description {
@@ -255,6 +255,10 @@ body {
   font-size: 20px;
   line-height: 35px;
   color: #6a6a6a;
+}
+
+.hero__btn {
+  height: 45px;
 }
 
 .progress-dots__item {
@@ -489,26 +493,24 @@ body {
   padding-top: 5px;
 }
 
-.btn--primary button {
+.btn--primary {
+  background-color: #0052b4;
+  color: white;
+  height: 100%;
   width: 145px;
-  height: 45px;
-  background-color: #0052b4;
-  color: white;
 }
-
-.main__section-five__button button {
-  width: 225px;
-  height: 45px;
-  background-color: #0052b4;
-  color: white;
-}
-
-.nav-button {
+.btn--nav {
   padding: 5px 20px;
   width: 100px;
   border-color: #0052b4;
   border-radius: 5px;
-  background-color: #e5e5e5;
+  background-color: white;
+}
+.btn--secondary {
+  width: 225px;
+  height: 100%;
+  background-color: #0052b4;
+  color: white;
 }
 
 .footer__legal {
@@ -1040,7 +1042,7 @@ body {
 }
 .form__input {
   border: none;
-  background-color: #e5e5e5;
+  background-color: white;
   box-shadow: 0 1px #9da8b6;
   font-size: 16px;
   color: #35384d;
@@ -1054,6 +1056,9 @@ body {
 .form__message {
   margin: 20px 0;
   color: #35384d;
+}
+.form__button {
+  height: 45px;
 }
 
 .checkbox__button {

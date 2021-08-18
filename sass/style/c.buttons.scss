@@ -1,22 +1,21 @@
-@mixin button($width:145px) {
-    width: $width;
-    height: 45px;
-    background-color: $blue-2;
-    color: $gray-1;
-}
-
-.btn--primary button {
-    @include button;
-}
-
-.main__section-five__button button {
-    @include button($width: 225px);
-}
-
-.nav-button {
-    padding: 5px 20px;
-    width: 100px;
-    border-color: $blue-2;
-    border-radius: 5px;
-    background-color: $body-background;
+.btn {
+    &--primary {
+        background-color: $blue-2;
+        color: $gray-1;
+        height: 100%;
+        width: 145px;
+    }
+    &--nav {
+        padding: 5px 20px;
+        width: 100px;
+        border-color: $blue-2;
+        border-radius: 5px;
+        background-color: $body-background;
+    }
+    &--secondary {
+        width: 225px;
+        height: 100%;
+        background-color: $blue-2;
+        color: $gray-1;
+    }
 }
