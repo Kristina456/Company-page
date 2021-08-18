@@ -28,6 +28,10 @@
         color: $gray-5;
         font-family: $font-sans;
     }
+    &__message {
+        margin: 20px 0;
+        color: $gray-5;
+    }
 }
 
 .checkbox {
