@@ -1,4 +1,4 @@
-let slides = document.querySelectorAll(".slideshow__section");
+let slides = document.querySelectorAll(".js-slide");
 let slideDots = document.querySelectorAll(".js-dot");
 
 // Slide idexes
