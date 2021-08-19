@@ -9,14 +9,14 @@
     
     .title {
         &__h2 {
-            font-size: $type-large;
-            color: $blue-3;
-            font-weight: $type-weight-bold;
             margin: 40px 0;
+            font-size: $type-large;
+            font-weight: $type-weight-bold;
+            color: $blue-3;
         }
         &__main {
-            font-size: $type-medium;
             line-height: 28px;
+            font-size: $type-medium;
             color: $gray-3;
         }
     }
@@ -33,11 +33,11 @@
     }
     
     .solution__text__item {
-        flex: 1 0 50%;
-        flex-wrap: wrap;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 1 0 50%;
     }
     
     .solution__text {
@@ -56,17 +56,17 @@
     }
     
     .solution__image {
-        flex: 1 0 50%;
-        flex-wrap: wrap;
-        padding: 10px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        flex: 1 0 50%;
+        padding: 10px;
     }
     
     .solution__image__item {
+        position: relative;
         max-width: 300px;
         max-height: 250px;
-        position: relative;
     }
     
     @media (max-width: 999px) {

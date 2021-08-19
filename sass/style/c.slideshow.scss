@@ -1,6 +1,6 @@
 .slideshow {
-    max-height: 1200px;
     position: relative;
+    max-height: 1200px;
     margin: auto;
 }
 
@@ -18,50 +18,50 @@
 
 .slide {
     &__title {
-        font-size: $type-large;
-        color: $blue-3;
-        font-weight: $type-weight-bold;
         margin: 40px 0;
         min-height: 120px;
+        font-weight: $type-weight-bold;
+        font-size: $type-large;
+        color: $blue-3;
     }
     &__main {
-        min-height: 360px;
         display: flex;
         flex-wrap: wrap;
+        min-height: 360px;
         @media (max-width: 999px) {
             flex-direction: column;
             align-items: center;
         }
     }
     &__text {
-        flex: 1;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
         padding-right: 10px;
     }
 }
 
 .slide__text {
     &__title {
+        max-width: 430px;
+        line-height: 28px;
         font-weight: $type-weight-bold;
         font-size: $type-medium;
         color: $blue-3;
-        line-height: 28px;
-        max-width: 430px;
     }
     &__paragraph {
         max-width: 450px;
-        font-size: $type-base;
-        line-height: 24px;
         padding: 16px 0;
+        line-height: 24px;
+        font-size: $type-base;
         color: $gray-3;
     }
 }
 
 .slide__img__item {
-    flex: 1;
     position: relative;
+    flex: 1;
 }
 
 .slide__img {
@@ -76,18 +76,18 @@
 }
 
 .info-box {
+    display: flex;
     max-width: 220px;
     max-height: 45px;
-    display: flex;
-    font-size: $type-tny;
     line-height: 1.5;
+    border-radius: 5px;
+    font-size: $type-tny;
     color: $gray-2;
     background-color: rgba(251, 251, 251, 1);
     box-shadow: $shadow-info-box;
-    border-radius: 5px;
     &__image {
-        background-color: rgb(251, 251, 251);
         margin: 15px;
+        background-color: rgb(251, 251, 251);
     }
     &__text {
         margin: 5px;
@@ -107,7 +107,7 @@
     }
 }
 
-.slide__img__image {
+.slideshow-img {
     max-width: 100%;
     max-height: 100%;
     @media (max-width: 999px) {

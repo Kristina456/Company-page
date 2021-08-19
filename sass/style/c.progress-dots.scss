@@ -10,21 +10,21 @@
  }
  
  .progress-dots-bar {
-     border-top: 2px dashed rgba(205, 205, 205, 1);
      max-width: 98%;
      height: 2px;
      margin-top: -20px;
      margin-left: 5px;
+     border-top: 2px dashed rgba(205, 205, 205, 1);
  }
  
  .progres-dot__item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
      width: 23px;
      height: 23px;
      border-radius: 50px;
      border: 1px solid $blue-3;
-     display: flex;
-     justify-content: center;
-     align-items: center;
  }
  
  .progres-dot__item--first {
@@ -35,17 +35,17 @@
  
  .progress-dot {
      display: block;
-     background-color: $blue-3;
-     border-radius: 50%;
      width: 15px;
      height: 15px;
-     text-align: center;
-     color: transparent;
      position: relative;
+     border-radius: 50%;
+     text-align: center;
+     background-color: $blue-3;
+     color: transparent;
      &__first {
-         background-color: $dot-color;
          width: 25px;
          height: 25px;
+         background-color: $dot-color;
          color: $dot-color;
      }
      &__text {

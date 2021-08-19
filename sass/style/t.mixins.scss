@@ -1,8 +1,0 @@
-@mixin justify-img($flex:flex-end){
-    flex: 0 0 50%;
-    display: flex;
-    justify-content: $flex;
-    margin: 20px;
-}
-
-

@@ -1,13 +1,13 @@
 .footer__legal {
-    box-shadow: $shadow-line2;
     padding: 16px;
+    box-shadow: $shadow-line2;
 }
 
 .legal {
-    margin: 0px $primary-margin;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px $primary-margin;
     @media screen and (max-width: 770px) {
         flex-direction: column;
         margin: 0 auto;
@@ -25,14 +25,14 @@
 .legal--right {
     flex: 1;
     &__menu {
-        justify-content: space-between;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     &__item {
         width: fit-content;
-        word-wrap: unset;
         padding-right: 10px;
+        word-wrap: unset;
     }
     &__link {
         text-decoration: none;
