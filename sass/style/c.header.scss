@@ -22,18 +22,24 @@
     height: 100%;
     &__menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     &__item {
-        padding-right: 35px;
+        margin-right: 10px;
     }
     &__link {
         text-decoration: none;
         font-weight: $type-weight-bold;
         font-size: $type-xsmall;
         color: $gray-7;
+        padding: 10px;
     }
+}
+
+.navbar--left__link:hover,
+.navbar--right__link:hover {
+    color: $gray-hover;
 }
 
 .navbar--right {
@@ -49,7 +55,7 @@
     &__item {
         display: flex;
         height: 100%;
-        padding-right: 35px;
+        padding-right: 20px;
         font-size: $type-xsmall;
         @media screen and (max-width: 990px) {
             padding-right: 10px;
@@ -61,6 +67,7 @@
         text-decoration: none;
         font-size: $type-xsmall;
         color: $gray-7;
+        padding: 10px;
     }
     &__img {
         margin-right: 10px;

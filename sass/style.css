@@ -81,6 +81,9 @@ table {
   Background color
  */
 /* 
+Hover color
+ */
+/* 
   Dot color
  */
 /* 
@@ -438,7 +441,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 33px;
+  width: 35px;
   height: 35px;
   border-radius: 50px;
   background-color: rgba(255, 118, 22, 0.5);
@@ -486,6 +489,10 @@ body {
   text-align: center;
   padding-top: 5px;
   cursor: pointer;
+}
+
+.img-close:hover {
+  transform: rotate(45deg);
 }
 
 .btn--nav {
@@ -603,6 +610,10 @@ body {
   font-size: 13px;
 }
 
+.legal--right__link:hover {
+  color: black;
+}
+
 .footer__main {
   display: flex;
   flex-wrap: wrap;
@@ -638,6 +649,10 @@ body {
   margin-top: 20px;
 }
 
+.footer--left__mail:hover {
+  text-decoration: underline;
+}
+
 .footer--right {
   display: flex;
   flex-direction: row;
@@ -660,6 +675,10 @@ body {
   text-decoration: none;
   font-size: 13px;
   color: #0052b4;
+}
+
+.footer--right__link:hover {
+  color: #011e42;
 }
 
 .header {
@@ -689,17 +708,23 @@ body {
 }
 .navbar--left__menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .navbar--left__item {
-  padding-right: 35px;
+  margin-right: 10px;
 }
 .navbar--left__link {
   text-decoration: none;
   font-weight: 900;
   font-size: 13px;
   color: black;
+  padding: 10px;
+}
+
+.navbar--left__link:hover,
+.navbar--right__link:hover {
+  color: #929191;
 }
 
 .navbar--right {
@@ -716,7 +741,7 @@ body {
 .navbar--right__item {
   display: flex;
   height: 100%;
-  padding-right: 35px;
+  padding-right: 20px;
   font-size: 13px;
 }
 @media screen and (max-width: 990px) {
@@ -730,6 +755,7 @@ body {
   text-decoration: none;
   font-size: 13px;
   color: black;
+  padding: 10px;
 }
 .navbar--right__img {
   margin-right: 10px;
