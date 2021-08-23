@@ -212,229 +212,202 @@
 
                     <!-- carousel -->
 
-                    <div class="slideshow">
-                        <div class="slideshow__dots">
-                            <div class="js-dot">
-                                <div class="js-dot__item dot__item">
-                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
-                                    <div class="dot" onclick="currentSlide(0)">
-                                        <div class="dot__img js-img--inactive"></div>
-                                    </div>
-                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
-                                </div>
-                                <div class="dot__text js-text--inactive">Extraction</div>
-                            </div>
+                    <div>
+                        <div class="slideshow">
 
-                            <div class="js-dot">
-                                <div class="js-dot__item dot__item">
-                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
-                                    <div class="dot" onclick="currentSlide(1)">
-                                        <div class="dot__img js-img--inactive"></div>
-                                    </div>
-                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
-                                </div>
-                                <div class="dot__text js-text--inactive">Transport</div>
-                            </div>
+                            <!-- BUTTONS (input/labels) -->
 
-                            <div class="js-dot">
-                                <div class="js-dot__item dot__item">
-                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
-                                    <div class="dot" onclick="currentSlide(2)">
-                                        <div class="dot__img js-img--inactive"></div>
-                                    </div>
-                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
-                                </div>
-                                <div class="dot__text js-text--inactive">Refining</div>
-                            </div>
+                            <div class="slider" aria-hidden="true"></div>
 
-                            <div class="js-dot">
-                                <div class="js-dot__item dot__item">
-                                    <a class="dart u-hide" onclick="previousSlide()">&lt;</a>
-                                    <div class="dot" onclick="currentSlide(3)">
-                                        <div class="dot__img js-img--inactive"></div>
+                            <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+                            <label class="btn" id="slide-1-trigger-label" for="slide-1-trigger"><span>Extraction</span></label>
+
+                            <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+                            <label class="btn" id="slide-2-trigger-label" for="slide-2-trigger"><span>Transport</span></label>
+
+                            <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+                            <label class="btn" id="slide-3-trigger-label" for="slide-3-trigger"><span>Refining</span></label>
+
+                            <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+                            <label class="btn" id="slide-4-trigger-label" for="slide-4-trigger"><span>Export</span></label>
+
+                            <!-- SLIDES -->
+                            <div class="slides">
+                                <div id="slide-role">
+                                    <div class="slide slide-1">
+                                        <div>
+                                            <h2 class="slide__title">How <br>We Do IT</h2>
+                                        </div>
+                                        <div class="slide__main">
+                                            <div class="slide__text">
+
+                                                <h3 class="slide__text__title">
+                                                    Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                                </h3>
+
+                                                <div class="slide__text__paragraph">
+                                                    <p>
+                                                        We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__img__item">
+                                                <div class="slide__img">
+                                                    <div>
+                                                        <img class="slideshow-img" src="./images/carousel/1.png" alt="ilustration">
+                                                        <div class="info-box info-box__first">
+                                                            <div class="info-box__image"><img src="./images/carousel/Vector(2).png" alt="ilustration"></div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-box info-box__second">
+                                                            <div class="info-box__image">
+                                                                <img src="./images/carousel/Vector(2).png" alt="ilustration">
+                                                            </div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <a class="dart u-hide" onclick="nextSlide()">&gt;</a>
+
+                                    <div class="slide slide-2">
+                                        <div>
+                                            <h2 class="slide__title">Mode of Transport</h2>
+                                        </div>
+
+                                        <div class="slide__main">
+                                            <div class="slide__text">
+                                                <div class="slide__text__title">
+                                                    <h3>
+                                                        Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                                    </h3>
+                                                </div>
+                                                <div class="slide__text__paragraph">
+                                                    <p>
+                                                        We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__img__item">
+                                                <div class="slide__img">
+                                                    <div>
+                                                        <img class="slideshow-img" src="./images/carousel/2.png" alt="ilustration">
+                                                        <div class="info-box info-box__first">
+                                                            <div class="info-box__image"><img src="./images/carousel/Vector(2).png" alt="ilustration"></div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-box info-box__second">
+                                                            <div class="info-box__image">
+                                                                <img src="./images/carousel/Vector(2).png" alt="ilustration">
+                                                            </div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="slide slide-3">
+                                        <div>
+                                            <h2 class="slide__title">We Make it <br>More Efficient</h2>
+                                        </div>
+
+                                        <div class="slide__main">
+                                            <div class="slide__text">
+                                                <div class="slide__text__title">
+                                                    <h3>
+                                                        Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                                    </h3>
+                                                </div>
+                                                <div class="slide__text__paragraph">
+                                                    <p>
+                                                        We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__img__item">
+                                                <div class="slide__img">
+                                                    <div>
+                                                        <img class="slide__img__image" src="./images/carousel/3.png" alt="slideshow img">
+                                                        <div class="info-box info-box__first">
+                                                            <div class="info-box__image">
+                                                                <img src="./images/carousel/Vector(2).png" alt="slideshow img">
+                                                            </div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-box info-box__second">
+                                                            <div class="info-box__image">
+                                                                <img src="./images/carousel/Vector(2).png" alt="slideshow img">
+                                                            </div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="slide slide-4">
+                                        <div>
+                                            <h2 class="slide__title">Where Does it Go</h2>
+                                        </div>
+
+                                        <div class="slide__main">
+                                            <div class="slide__text">
+                                                <div class="slide__text__title">
+                                                    <h3>
+                                                        Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
+                                                    </h3>
+                                                </div>
+                                                <div class="slide__text__paragraph">
+                                                    <p>
+                                                        We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide__img__item">
+                                                <div class="slide__img">
+                                                    <div>
+                                                        <img class="slideshow-img" src="./images/carousel/4.png" alt="image">
+                                                        <div class="info-box info-box__first">
+                                                            <div class="info-box__image"><img src="./images/carousel/Vector(2).png" alt="image"></div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-box info-box__second">
+                                                            <div class="info-box__image">
+                                                                <img src="./images/carousel/Vector(2).png" alt="image">
+                                                            </div>
+                                                            <div class="info-box__text">
+                                                                Syoak serves more than 2,500 petrol stations globally
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dot__text js-text--inactive">Export</div>
                             </div>
-                            <div class="slideshow__dots-bar" aria-hidden="true"> </div>
                         </div>
-
-                        <div class="slideshow-container">
-                            <section class="js-slide slide slide-one">
-                                <div>
-                                    <h2 class="slide__title">How <br>We Do IT</h2>
-                                </div>
-
-                                <div class="slide__main">
-                                    <div class="slide__text">
-
-                                        <h3 class="slide__text__title">
-                                            Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
-                                        </h3>
-
-                                        <div class="slide__text__paragraph">
-                                            <p>
-                                                We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="slide__img__item">
-                                        <div class="slide__img">
-                                            <div>
-                                                <img class="slideshow-img" src="./images/carousel/1.png" alt="ilustration">
-                                                <div class="info-box info-box__first">
-                                                    <div class="info-box__image"><img src="./images/carousel/Vector(2).png" alt="ilustration"></div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                                <div class="info-box info-box__second">
-                                                    <div class="info-box__image">
-                                                        <img src="./images/carousel/Vector(2).png" alt="ilustration">
-                                                    </div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="js-slide slide slide-two">
-                                <div>
-                                    <h2 class="slide__title">Mode of Transport</h2>
-                                </div>
-
-                                <div class="slide__main">
-                                    <div class="slide__text">
-                                        <div class="slide__text__title">
-                                            <h3>
-                                                Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
-                                            </h3>
-                                        </div>
-                                        <div class="slide__text__paragraph">
-                                            <p>
-                                                We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="slide__img__item">
-                                        <div class="slide__img">
-                                            <div>
-                                                <img class="slideshow-img" src="./images/carousel/2.png" alt="ilustration">
-                                                <div class="info-box info-box__first">
-                                                    <div class="info-box__image"><img src="./images/carousel/Vector(2).png" alt="ilustration"></div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                                <div class="info-box info-box__second">
-                                                    <div class="info-box__image">
-                                                        <img src="./images/carousel/Vector(2).png" alt="ilustration">
-                                                    </div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="js-slide slide slide-three">
-                                <div>
-                                    <h2 class="slide__title">We Make it <br>More Efficient</h2>
-                                </div>
-
-                                <div class="slide__main">
-                                    <div class="slide__text">
-                                        <div class="slide__text__title">
-                                            <h3>
-                                                Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
-                                            </h3>
-                                        </div>
-                                        <div class="slide__text__paragraph">
-                                            <p>
-                                                We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="slide__img__item">
-                                        <div class="slide__img">
-                                            <div>
-                                                <img class="slide__img__image" src="./images/carousel/3.png" alt="slideshow img">
-                                                <div class="info-box info-box__first">
-                                                    <div class="info-box__image">
-                                                        <img src="./images/carousel/Vector(2).png" alt="slideshow img">
-                                                    </div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                                <div class="info-box info-box__second">
-                                                    <div class="info-box__image">
-                                                        <img src="./images/carousel/Vector(2).png" alt="slideshow img">
-                                                    </div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="js-slide slide slide-four">
-                                <div>
-                                    <h2 class="slide__title">Where Does it Go</h2>
-                                </div>
-
-                                <div class="slide__main">
-                                    <div class="slide__text">
-                                        <div class="slide__text__title">
-                                            <h3>
-                                                Syoak is uniquely positioned to deliver actionable inteligence to analyze and reduce risk
-                                            </h3>
-                                        </div>
-                                        <div class="slide__text__paragraph">
-                                            <p>
-                                                We have long and proud history givin emphasis to environment social and economic outcomes to deliver places that respond. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="slide__img__item">
-                                        <div class="slide__img">
-                                            <div>
-                                                <img class="slideshow-img" src="./images/carousel/4.png" alt="image">
-                                                <div class="info-box info-box__first">
-                                                    <div class="info-box__image"><img src="./images/carousel/Vector(2).png" alt="image"></div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                                <div class="info-box info-box__second">
-                                                    <div class="info-box__image">
-                                                        <img src="./images/carousel/Vector(2).png" alt="image">
-                                                    </div>
-                                                    <div class="info-box__text">
-                                                        Syoak serves more than 2,500 petrol stations globally
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                        </div>
-
                     </div>
-
 
                     <!-- oil cards -->
                     <section class="oil-cards">
@@ -640,7 +613,7 @@
         </div>
     </div>
     <script src="dots.js"></script>
-    <script src="carousel.js"></script>
+
     <script src="hamburgerMenu.js"></script>
     <script src="./form.js"></script>
 </body>

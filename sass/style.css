@@ -253,7 +253,7 @@ body {
 
 .progress-dots__item {
   width: 90%;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .progress-dots {
@@ -309,24 +309,76 @@ body {
   font-size: 15px;
 }
 
+/*
+    Base Styles
+*/
+input[type=radio] {
+  display: none;
+}
+
 .slideshow {
+  max-width: 1229px;
+  height: 800px;
   position: relative;
-  max-height: 1200px;
-  margin: auto;
+}
+
+.slides {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/*
+    Slides
+*/
+#slide-role {
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  transition: left 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  display: flex;
 }
 
 .slide {
-  display: none;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
 }
 
-.u-hide {
-  display: none;
+/* slide logic */
+input[type=radio]:checked#slide-2-trigger ~ div.slides > div#slide-role {
+  left: -100%;
 }
 
-.u-show {
-  display: block;
+input[type=radio]:checked#slide-3-trigger ~ div.slides > div#slide-role {
+  left: -200%;
 }
 
+input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
+  left: -300%;
+}
+
+#slide-1-trigger ~ #slide-1-trigger-label > span,
+#slide-2-trigger ~ #slide-2-trigger-label > span,
+#slide-3-trigger ~ #slide-3-trigger-label > span,
+#slide-4-trigger ~ #slide-4-trigger-label > span {
+  color: white;
+}
+
+#slide-1-trigger:checked ~ #slide-1-trigger-label > span,
+#slide-2-trigger:checked ~ #slide-2-trigger-label > span,
+#slide-3-trigger:checked ~ #slide-3-trigger-label > span,
+#slide-4-trigger:checked ~ #slide-4-trigger-label > span {
+  color: #ff7616;
+}
+
+/* slide design */
 .slide__title {
   margin: 40px 0;
   min-height: 120px;
@@ -371,11 +423,11 @@ body {
 .slide__img__item {
   position: relative;
   flex: 1;
+  padding-left: 50px;
 }
 
 .slide__img {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
 }
@@ -390,10 +442,10 @@ body {
   max-height: 45px;
   line-height: 1.5;
   border-radius: 5px;
-  font-size: 11px;
-  color: #9da8b6;
+  font-size: small;
+  color: gray;
   background-color: #fbfbfb;
-  box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: gray;
 }
 .info-box__image {
   margin: 15px;
@@ -401,16 +453,17 @@ body {
 }
 .info-box__text {
   margin: 5px;
+  font-size: 11px;
 }
 
 .info-box__first {
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: -30px;
 }
 .info-box__second {
   position: absolute;
-  bottom: 10px;
+  bottom: 100px;
   right: -10px;
 }
 
@@ -987,61 +1040,74 @@ body {
     background-color: #9da8b6;
   }
 }
-.slideshow__dots {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dot__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dart {
-  cursor: pointer;
-  padding: 5px;
-  transition: 1s ease;
-  font-weight: 900;
-  color: #0052b4;
-}
-
-.dot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ff7616;
-  cursor: pointer;
-}
-.dot__img {
-  width: 40px;
-  height: 40px;
-}
-.dot__text {
-  margin-bottom: 15px;
-  display: none;
-  color: #ff7616;
-}
-
-.js-dot__img--active {
-  background: url("../../images/orange-dot.png") no-repeat center/35px;
-}
-
-.js-dot__text--active {
-  display: block;
-  text-align: center;
-  color: #ff7616;
-}
-
-.slideshow__dots-bar {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 2px;
+.btn {
   position: absolute;
-  top: 20px;
-  z-index: -1;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transform: scale(1.1);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 50px;
+  height: 20px;
+  position: relative;
+  top: 30px;
+  left: 0;
   border-top: 2px dashed #cdcdcd;
+}
+
+.btn,
+.btn::after {
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.btn:nth-of-type(1) {
+  left: 0%;
+}
+
+.btn:nth-of-type(2) {
+  left: 33%;
+}
+
+.btn:nth-of-type(3) {
+  left: 66%;
+}
+
+.btn:nth-of-type(4) {
+  left: 97%;
+}
+
+.btn:hover {
+  transform: scale(1.4);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  background: url(../../images/Group2.1.png) center;
+  width: 20px;
+  height: 20px;
+  margin: 3px 3px;
+  transform: scale(0.5, 0.5);
+}
+
+/* button logic */
+input[type=radio]:checked + label.btn {
+  transform: scale(1.2);
+}
+
+input[type=radio]:checked + label.btn::after {
+  transform: scale(1.1, 1.1);
+  background: url(../../images/orange-dot.png) center;
+  background-size: 20px;
 }
 
 .map {
