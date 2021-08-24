@@ -7,9 +7,9 @@
  }
  
  .slideshow {
+     position: relative;
      max-width: 1229px;
      height: 800px;
-     position: relative;
  }
  
  .slides {
@@ -25,20 +25,13 @@
 */
  
  #slide-role {
-     background: inherit;
+     display: flex;
      position: absolute;
      top: 0;
      left: 0;
      width: 400%;
+     background: inherit;
      transition: left .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-     display: flex;
- }
- 
- .slide {
-     width: 100%;
-     background-size: cover;
-     background-position: center;
-     padding: 70px 0;
  }
  /* slide logic */
  
@@ -70,6 +63,10 @@
  /* slide design */
  
  .slide {
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     padding: 70px 0;
      &__title {
          margin: 40px 0;
          min-height: 120px;

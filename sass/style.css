@@ -317,9 +317,9 @@ input[type=radio] {
 }
 
 .slideshow {
+  position: relative;
   max-width: 1229px;
   height: 800px;
-  position: relative;
 }
 
 .slides {
@@ -335,20 +335,13 @@ input[type=radio] {
     Slides
 */
 #slide-role {
-  background: inherit;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
   width: 400%;
+  background: inherit;
   transition: left 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  display: flex;
-}
-
-.slide {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  padding: 70px 0;
 }
 
 /* slide logic */
@@ -379,6 +372,12 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 }
 
 /* slide design */
+.slide {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
+}
 .slide__title {
   margin: 40px 0;
   min-height: 120px;
