@@ -1,12 +1,10 @@
 .form-section {
     margin: 200px 0 100px;
     &__title {
-        padding-bottom: 40px;
+        margin: 40px 0;
         font-size: $type-large;
         color: $blue-3;
         font-weight: $type-weight-bold;
-        margin: 40px 0;
-        margin-bottom: 0;
     }
     &__main {
         display: flex;
@@ -27,22 +25,22 @@
         padding-bottom: 35px;
     }
     &__label {
+        margin-bottom: 4px;
         font-size: $type-xtny;
         color: $blue-1;
-        margin-bottom: 4px;
     }
     &__input {
         border: none;
+        font-size: $type-base;
         background-color: $body-background;
         box-shadow: $shadow-form;
-        font-size: $type-base;
         color: $gray-5;
     }
     &__textarea {
-        box-shadow: none;
         font-size: $type-base;
-        color: $gray-5;
         font-family: $font-sans;
+        box-shadow: none;
+        color: $gray-5;
     }
     &__message {
         margin: 20px 0;
@@ -61,8 +59,8 @@
         border-radius: 5px;
     }
     &__text {
-        font-size: $type-small;
         margin-left: 15px;
+        font-size: $type-small;
         color: $gray-2;
     }
 }
