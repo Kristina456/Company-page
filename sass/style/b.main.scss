@@ -23,19 +23,6 @@ body {
     }
 }
 
-.sidebar {
-    width: 200px;
-    position: fixed;
-    @media screen and (max-width: 990px) {
-        height: 50px;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        background-color: $body-background;
-    }
-}
-
 .main {
     margin: 0 $primary-margin;
 }

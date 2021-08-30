@@ -1,8 +1,3 @@
-.sidebar {
-    min-width: $sidebar-width;
-    box-shadow: $shadow-line1;
-}
-
 .sidebar__logo {
     display: flex;
     justify-content: center;
@@ -12,4 +7,18 @@
 
 .sidebar__logo img {
     height: 25px;
+}
+
+.sidebar {
+    position: fixed;
+    min-width: $sidebar-width;
+    box-shadow: $shadow-line1;
+    @media screen and (max-width: 990px) {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $body-background;
+    }
 }
