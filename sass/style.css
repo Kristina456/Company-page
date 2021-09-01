@@ -153,21 +153,6 @@ body {
   }
 }
 
-.sidebar {
-  width: 200px;
-  position: fixed;
-}
-@media screen and (max-width: 990px) {
-  .sidebar {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    background-color: white;
-  }
-}
-
 .main {
   margin: 0 70px;
 }
@@ -212,11 +197,6 @@ body {
   box-shadow: 0px -1px rgba(0, 0, 0, 0.07);
 }
 
-.sidebar {
-  min-width: 200px;
-  box-shadow: 1px 0 rgba(0, 0, 0, 0.07);
-}
-
 .sidebar__logo {
   display: flex;
   justify-content: center;
@@ -226,6 +206,22 @@ body {
 
 .sidebar__logo img {
   height: 25px;
+}
+
+.sidebar {
+  position: fixed;
+  min-width: 200px;
+  box-shadow: 1px 0 rgba(0, 0, 0, 0.07);
+}
+@media screen and (max-width: 990px) {
+  .sidebar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
 }
 
 /* 
@@ -878,7 +874,6 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 .solutions {
   margin: 200px auto;
 }
-
 .solutions__title {
   max-width: 650px;
   margin: 100px 0;
@@ -908,30 +903,13 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
     margin: 50px auto;
   }
 }
-
-.solution__text__item {
+.solution__about-company {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex: 1 0 50%;
 }
-
-.solution__text {
-  max-width: 430px;
-}
-.solution__text__title {
-  font-weight: 900;
-  font-size: 20px;
-  color: #00367a;
-  line-height: 28px;
-}
-.solution__text__paragraph {
-  margin: 16px 0;
-  line-height: 24px;
-  color: #6a6a6a;
-}
-
 .solution__image {
   display: flex;
   justify-content: center;
@@ -940,7 +918,22 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
   padding: 10px;
 }
 
-.solution__image__item {
+.about-company__item {
+  max-width: 430px;
+}
+.about-company__title {
+  font-weight: 900;
+  font-size: 20px;
+  color: #00367a;
+  line-height: 28px;
+}
+.about-company__paragraph {
+  margin: 16px 0;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
+.image__item {
   position: relative;
   max-width: 300px;
   max-height: 250px;
@@ -952,7 +945,7 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
     flex-direction: column-reverse;
   }
 
-  .solution__image__item img {
+  .image__item img {
     max-height: 100%;
     max-width: 100%;
   }
