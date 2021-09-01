@@ -59,8 +59,10 @@
                                     <span class="navigation-text">Contact us</span>
                                 </a>
                             </li>
-                            <li class="navbar--right__item">
-                                <button class="button btn--nav">Sign up</button>
+                            <li class="navbar--right__link navbar--right__item">
+                                <div class="btn-nav">
+                                    <a class="button btn-nav__link" href="#sign-up" role="button">Sign up</a>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -77,11 +79,11 @@
                         <div class="hero__description hero">
                             <p>We have a long and proud history givin emphasis to environment social and economics outcomes to deliver places that respond.</p>
                         </div>
-                        <div class="hero__btn">
-                            <button class="btn--primary button">
-                                    <img src="./images/Arrow.png" alt="Learn more image">Learn more</img>
-                                  
-                            </button>
+                        <div class="btn-hero">
+                            <a class="btn--primary button btn-hero__link" role="button" href="#learn-more">
+                                <img src="./images/Arrow.png" alt="Learn more image" class="btn-hero__img" />
+                                <span>Learn more</span>
+                            </a>
                         </div>
                     </section>
 
@@ -485,10 +487,10 @@
                                         </label>
                                         </div>
                                     </div>
-                                    <div class="form__button">
-                                        <button type="submit" class="button btn--secondary">Send Message</button>
-                                        <div class="js-hide form__message" id="js-message-sent">Message Sent Successfully</div>
+                                    <div class="btn-form">
+                                        <button type="submit" class="button btn-form__link">Send Message</button>
                                     </div>
+                                    <div class="js-hide form__message" id="js-message-sent">Message Sent Successfully</div>
                                 </form>
                             </div>
                             <div class="map">

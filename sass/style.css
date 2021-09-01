@@ -538,34 +538,65 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
   transform: rotate(45deg);
 }
 
-.btn--nav {
-  padding: 5px 20px;
-  width: 100px;
+.btn-nav {
   border-color: #0052b4;
   background-color: white;
+  width: 100px;
+  height: 35px;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
-.btn--primary {
-  height: 100%;
-  width: 145px;
+.btn-nav:hover {
   border: none;
-  background-color: #0052b4;
-  color: white;
 }
-.btn--secondary {
-  width: 225px;
+.btn-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
   height: 100%;
-  border: none;
-  background-color: #0052b4;
-  color: white;
+  color: black;
 }
 
-.btn--nav:hover {
-  background-color: #f5efef;
-  cursor: pointer;
+.btn-hero {
+  height: 45px;
+  width: 150px;
+  background-color: #0052b4;
+}
+.btn-hero__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.btn-hero__img {
+  margin-right: 10px;
+}
+
+.btn-form {
+  width: 225px;
+  height: 45px;
+  border: none;
+}
+.btn-form__link {
+  width: 100%;
+  height: 100%;
+  background-color: #0052b4;
+  color: white;
+  border: none;
 }
 
 .button,
-.btn--nav {
+.btn-nav {
   position: relative;
   transition: 800ms ease all;
   outline: none;
@@ -573,8 +604,8 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 }
 
 .button:hover,
-.btn--nav:hover {
-  background: #fff;
+.btn-nav:hover {
+  background: white;
   border: none;
   color: #00367a;
 }
@@ -786,6 +817,7 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 .navbar--right__menu {
   display: flex;
   align-items: center;
+  padding: 0 10px;
 }
 .navbar--right__item {
   display: flex;
