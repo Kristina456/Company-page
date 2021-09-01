@@ -850,20 +850,20 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
   top: -20px;
   left: 24px;
 }
-.card__text {
+.card__item {
   margin-top: 44px;
   margin-left: 24px;
 }
-
-.card__text--number {
+.card__number {
   font-size: 25px;
   font-weight: 900;
   line-height: 30px;
   color: #0052b4;
 }
-.card__text--text {
+.card__text {
   font-size: 16px;
   color: #9da8b6;
+  padding-top: 8px;
 }
 
 .solutions {
