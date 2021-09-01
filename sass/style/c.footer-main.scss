@@ -9,6 +9,7 @@
 .footer--left {
     flex-grow: 1;
     margin-bottom: 30px;
+    font-family: $font-sans;
     &__section {
         max-width: 320px;
         font-size: $type-xsmall;
@@ -23,13 +24,17 @@
     }
     &__text {
         margin-left: 10px;
+        color: $blue-3;
     }
     &__mail {
         text-decoration: none;
-        color: $gray-7;
+        color: $blue-3;
     }
     &__p {
         margin-top: 20px;
+        color: $gray-5;
+        font-size: $type-xsmall;
+        line-height: 20px;
     }
 }
 
@@ -48,8 +53,9 @@
     }
     &__title {
         margin-bottom: 12px;
-        font-weight: $type-weight-bold;
+        font-weight: $type-weight-semibold;
         font-size: $type-base;
+        color: $gray-5;
     }
     &__item {
         margin-top: 8px;
@@ -57,7 +63,7 @@
     &__link {
         text-decoration: none;
         font-size: $type-xsmall;
-        color: $blue-1;
+        color: $blue-2;
     }
 }
 

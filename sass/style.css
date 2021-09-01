@@ -668,6 +668,7 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 .footer--left {
   flex-grow: 1;
   margin-bottom: 30px;
+  font-family: "Inter", sans-serif, "Segoe UI", "Roboto";
 }
 .footer--left__section {
   max-width: 320px;
@@ -683,13 +684,17 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 }
 .footer--left__text {
   margin-left: 10px;
+  color: #00367a;
 }
 .footer--left__mail {
   text-decoration: none;
-  color: black;
+  color: #00367a;
 }
 .footer--left__p {
   margin-top: 20px;
+  color: #35384d;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .footer--left__mail:hover {
@@ -708,8 +713,9 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 }
 .footer--right__title {
   margin-bottom: 12px;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 16px;
+  color: #35384d;
 }
 .footer--right__item {
   margin-top: 8px;
