@@ -11,7 +11,7 @@
     }
 }
 
-.hover-dot__item {
+.hover-dot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,33 +20,40 @@
     height: 35px;
     border-radius: 50px;
     background-color: $dot-color-2;
+    &__text {
+        width: 22px;
+        height: 22px;
+        border-radius: 50px;
+        background-color: $dot-color;
+        color: transparent;
+    }
 }
 
-.hover-dot {
-    width: 22px;
-    height: 22px;
-    border-radius: 50px;
-    background-color: $dot-color;
-    color: transparent;
-}
-
-.popover__text__item {
+.popover__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
+}
+
+.popover-hover {
     border-radius: 5px;
     padding: 15px 0;
     background-color: #FFFFFF;
     box-shadow: $shadow-popover;
-}
-
-.popover__text {
-    flex: 0 0 80%;
-    padding-right: 5px;
-    line-height: 1.75;
-    font-size: $type-xsmall;
-    color: $gray-2;
+    &__x {
+        flex: 0 0 20%;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    &__text {
+        flex: 0 0 80%;
+        padding-right: 5px;
+        line-height: 1.75;
+        font-size: $type-xsmall;
+        color: $gray-2;
+    }
 }
 
 #popover-1 {
@@ -57,13 +64,6 @@
 #popover-2 {
     bottom: -10px;
     left: 20px;
-}
-
-.popover__x {
-    flex: 0 0 20%;
-    text-align: center;
-    padding-top: 5px;
-    cursor: pointer;
 }
 
 .img-close:hover {
