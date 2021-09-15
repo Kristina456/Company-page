@@ -38,10 +38,6 @@
     }
 }
 
-.footer--left__mail:hover {
-    text-decoration: underline;
-}
-
 .footer--right {
     display: flex;
     flex-direction: row;
@@ -67,6 +63,8 @@
     }
 }
 
+.footer--left__mail:hover,
 .footer--right__link:hover {
-    color: $blue-4;
+    color: $gray-7;
+    transition: all 300ms ease-in-out;
 }
