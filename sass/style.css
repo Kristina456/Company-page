@@ -805,6 +805,7 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
 .navbar--left__link:hover,
 .navbar--right__link:hover {
   color: #929191;
+  transition: all 250ms ease-in-out;
 }
 
 .navbar--right {
@@ -992,7 +993,6 @@ input[type=radio]:checked#slide-4-trigger ~ div.slides > div#slide-role {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
