@@ -13,7 +13,7 @@
  */
 
 @import "./style/b.main";
-@import "./style/b.sidebar";
+@import "./style/b.aside";
 
 /* 
 * Components 
@@ -31,5 +31,6 @@
 @import "./style/c.solution";
 @import "./style/c.hamburger.scss";
 @import "./style/c.slideshow-dots.scss";
+@import "./style/c.layout.scss";
 @import "./style/c.map.scss";
 @import "./style/c.form.scss";

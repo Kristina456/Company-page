@@ -1,0 +1,9 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $header-hight;
+    &__image {
+        height: 25px;
+    }
+}
