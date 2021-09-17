@@ -9,13 +9,13 @@
         display: flex;
         flex-direction: column;
     }
-    &__main {
+    &--main {
         position: relative;
         left: $sidebar-width;
         width: calc(100% - 200px);
         border-left: 1px solid $gray-6;
     }
-    &__aside {
+    &--aside {
         position: fixed;
         min-width: $sidebar-width;
         box-shadow: $shadow-line1;
