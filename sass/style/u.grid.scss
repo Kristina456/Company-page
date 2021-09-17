@@ -1,10 +1,10 @@
 .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
-    padding: 10px;
     &--sml--12 {
         width: 100%;
     }
