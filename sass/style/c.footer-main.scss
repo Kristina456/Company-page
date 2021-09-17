@@ -1,52 +1,35 @@
 .footer__main {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
     padding: 50px 0;
     margin: 0 $primary-margin;
+    font-family: $font-sans;
 }
 
-.footer--left {
-    flex-grow: 1;
-    margin-bottom: 30px;
-    font-family: $font-sans;
-    &__section {
-        max-width: 320px;
-        font-size: $type-xsmall;
-    }
-    &__title {
-        margin-bottom: 25px;
-    }
-    &__contact {
-        display: flex;
-        align-items: center;
-        margin-bottom: 12px;
-    }
-    &__text {
-        margin-left: 10px;
-        color: $blue-3;
-    }
-    &__mail {
-        text-decoration: none;
-        color: $blue-3;
-    }
-    &__p {
-        margin-top: 20px;
-        color: $gray-5;
-        font-size: $type-xsmall;
-        line-height: 20px;
-    }
+.footer__text {
+    margin-top: 20px;
+    color: $gray-5;
+    font-size: $type-xsmall;
+    line-height: 20px;
+    width: 320px;
+}
+
+.footer__contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.footer__address {
+    margin-left: 10px;
+    color: $blue-3;
+}
+
+.footer__mail {
+    text-decoration: none;
+    color: $blue-3;
+    margin-left: 10px;
 }
 
 .footer--right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    &__pad {
-        flex: 1;
-        padding-right: 10px;
-    }
     &__title {
         margin-bottom: 12px;
         font-weight: $type-weight-semibold;
@@ -67,7 +50,7 @@
     }
 }
 
-.footer--left__mail:hover,
+.footer__mail:hover,
 .footer--right__link:hover {
     color: $gray-7;
     transition: all 300ms ease-in-out;
