@@ -16,16 +16,6 @@
         display: flex;
         margin-bottom: 12px;
     }
-    &__address {
-        margin-left: 10px;
-        color: $blue-3;
-        font-style: normal;
-    }
-    &__mail {
-        text-decoration: none;
-        color: $blue-3;
-        margin-left: 10px;
-    }
     &__title {
         margin-bottom: 12px;
         font-weight: $type-weight-semibold;
@@ -52,11 +42,4 @@
         color: $gray-2;
         font-size: $type-xsmall;
     }
-}
-
-.footer__mail:hover,
-.footer__link--main:hover,
-.footer__link--legal:hover {
-    color: $gray-7;
-    transition: all 300ms ease-in-out;
 }
