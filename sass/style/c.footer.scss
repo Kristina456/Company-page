@@ -30,16 +30,3 @@
         font-size: $type-xsmall;
     }
 }
-
-.footer__link {
-    &--main {
-        color: $blue-2;
-        font-size: $type-xsmall;
-        text-decoration: none;
-    }
-    &--legal {
-        text-decoration: none;
-        color: $gray-2;
-        font-size: $type-xsmall;
-    }
-}
