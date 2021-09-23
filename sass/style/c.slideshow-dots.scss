@@ -1,4 +1,4 @@
-.btn {
+.dot {
     position: absolute;
     top: 10px;
     width: 50px;
@@ -22,32 +22,32 @@
     border-top: 2px dashed rgba(205, 205, 205, 1);
 }
 
-.btn,
-.btn::after {
+.dot,
+.dot::after {
     transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.btn:nth-of-type(1) {
+.dot:nth-of-type(1) {
     left: 0%;
 }
 
-.btn:nth-of-type(2) {
+.dot:nth-of-type(2) {
     left: 33%;
 }
 
-.btn:nth-of-type(3) {
+.dot:nth-of-type(3) {
     left: 66%;
 }
 
-.btn:nth-of-type(4) {
+.dot:nth-of-type(4) {
     left: 97%;
 }
 
-.btn:hover {
+.dot:hover {
     transform: scale(1.4);
 }
 
-.btn::after {
+.dot::after {
     content: "";
     display: inline-block;
     background: url(../../images/Group2.1.png) center;
@@ -60,11 +60,11 @@
 
 /* button logic */
 
-input[type="radio"]:checked+label.btn {
+input[type="radio"]:checked+label.dot {
     transform: scale(1.2);
 }
 
-input[type="radio"]:checked+label.btn::after {
+input[type="radio"]:checked+label.dot::after {
     transform: scale(1.1, 1.1);
     background: url(../../images/orange-dot.png) center;
     background-size: 20px;

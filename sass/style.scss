@@ -13,11 +13,10 @@
  */
 
 @import "./style/b.main";
-@import "./style/b.aside";
 
 /* 
 * Components 
- */
+*/
 
 @import "./style/c.hero.scss";
 @import "./style/c.progress-dots";
@@ -26,6 +25,7 @@
 @import "./style/c.buttons";
 @import "./style/c.footer";
 @import "./style/c.header";
+@import "./style/c.logo";
 @import "./style/c.oil-cards.scss";
 @import "./style/c.solution";
 @import "./style/c.hamburger.scss";
