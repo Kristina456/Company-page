@@ -1,12 +1,11 @@
 .map {
     flex: 1 0 50%;
-}
-
-.map__item {
-    flex: 1 0 100%;
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 20px;
+    &__item {
+        flex: 1 0 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
 
 .map__item div iframe {

@@ -1,0 +1,32 @@
+.footer {
+  font-size: 13px;
+  font-family: $font-sans;
+  &__main {
+    padding: 50px 0;
+    margin: 0 $primary-margin;
+  }
+  &__text {
+    margin-top: 20px;
+    color: $gray-5;
+    font-size: $type-xsmall;
+    line-height: 20px;
+    width: 320px;
+  }
+  &__contact {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-weight: $type-weight-semibold;
+    font-size: $type-base;
+    color: $gray-5;
+  }
+  &__legal {
+    margin: 0 $primary-margin;
+  }
+  &__copyright {
+    color: $gray-2;
+    font-size: $type-xsmall;
+  }
+}

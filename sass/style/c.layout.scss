@@ -1,0 +1,36 @@
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media screen and (max-width: 990px) {
+        display: flex;
+        flex-direction: column;
+    }
+    &--main {
+        position: relative;
+        left: $sidebar-width;
+        width: calc(100% - 200px - 1px);
+        border-left: 1px solid $gray-6;
+        @media screen and (max-width: 990px) {
+            width: calc(100% - 1px);
+            position: initial;
+            margin-top: 100px;
+        }
+    }
+    &--aside {
+        position: fixed;
+        min-width: $sidebar-width;
+        box-shadow: $shadow-line1;
+        @media screen and (max-width: 990px) {
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: $body-background;
+        }
+    }
+}

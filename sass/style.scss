@@ -3,7 +3,6 @@
 */
 
 @import "./style/v.responsive.scss";
-@import "./style/v.reset.scss";
 @import "./style/v.colors";
 @import "./style/v.typography.scss";
 @import "./style/v.global.scss";
@@ -14,23 +13,34 @@
  */
 
 @import "./style/b.main";
-@import "./style/b.sidebar";
 
 /* 
 * Components 
- */
+*/
 
 @import "./style/c.hero.scss";
 @import "./style/c.progress-dots";
 @import "./style/c.slideshow";
 @import "./style/c.popover";
 @import "./style/c.buttons";
-@import "./style/c.footer-legal";
-@import "./style/c.footer-main";
+@import "./style/c.footer";
 @import "./style/c.header";
+@import "./style/c.logo";
 @import "./style/c.oil-cards.scss";
 @import "./style/c.solution";
 @import "./style/c.hamburger.scss";
 @import "./style/c.slideshow-dots.scss";
+@import "./style/c.layout.scss";
 @import "./style/c.map.scss";
 @import "./style/c.form.scss";
+
+/* 
+* Utilities
+*/
+
+@import "./style/u.grid.scss";
+@import "./style/u.display.scss";
+@import "./style/u.paddings.scss";
+@import "./style/u.clearing.scss";
+@import "./style/u.shadows.scss";
+@import "./style/u.anchor.scss";

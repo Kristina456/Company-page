@@ -1,0 +1,20 @@
+.u--anchor {
+    text-decoration: none;
+    font-style: normal;
+    padding-left: 10px;
+    &--blue {
+        color: $blue-2;
+    }
+    &--gray {
+        color: $gray-2;
+    }
+}
+
+.u--anchor:hover {
+    color: $gray-7;
+    transition: all 300ms ease-in-out;
+}
+
+.u--anchor--no-hover:hover {
+    color: $blue-2;
+}
