@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "webpack"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kristina456/Mono__Company-page.git"
@@ -16,21 +13,23 @@
     "url": "https://github.com/Kristina456/Mono__Company-page/issues"
   },
   "homepage": "https://github.com/Kristina456/Mono__Company-page#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.1",
-    "sass": "^1.42.1"
-  },
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^8.6.5",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
     "breakpoint-sass": "^2.7.1",
-    "css-loader": "^2.0.0",
-    "cssnano": "^4.0.5",
+    "css-loader": "^2.1.1",
+    "cssnano": "^5.0.8",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
     "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.0.1",
+    "sass": "^1.42.1",
+    "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^3.0.0"
+    "webpack": "^4.46.0",
+    "webpack-bundle-tracker": "^1.3.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
   }
 }

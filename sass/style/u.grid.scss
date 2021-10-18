@@ -1,17 +1,17 @@
 .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
-    &--sml--12 {
-        width: 100%;
-    }
-    &--sml--6 {
-        width: calc(100% / 2);
-    }
-    &--sml--4 {
-        width: calc(100% / 3);
-    }
+  &--sml--12 {
+    width: 100%;
+  }
+  &--sml--6 {
+    width: calc(100% / 2);
+  }
+  &--sml--4 {
+    width: calc(100% / 3);
+  }
 }

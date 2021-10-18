@@ -1,7 +1,0 @@
-{
-  "editor.defaultFormatter": "mblode.pretty-formatter",
-  "[html]": {
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
-  },
-  "liveServer.settings.port": 5502
-}
